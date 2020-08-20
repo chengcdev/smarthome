@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- themem: 窗口背景 -->
+    <attr name="window_bg" format="color|reference" />
+
+    <!-- themem: 按钮背景色 -->
+    <attr name="btn_bg" format="color|reference" />
+    <!-- themem: 按钮背景色 - 按下 -->
+    <attr name="btn_bg_pressed" format="color|reference" />
+    <!-- themem: 按钮背景色 - 选中 -->
+    <attr name="btn_bg_checked" format="color|reference" />
+
+    <!-- themem: 呼叫头像 -->
+    <attr name="call_portrait" format="reference" />
+
+
+    <!-- ============================================================= -->
+
+    <attr name="text" format="string|reference" />
+    <attr name="textColor" format="color|reference" />
+    <attr name="textSize" format="dimension|reference" />
+
+    <!-- -->
+    <declare-styleable name="InputView">
+        <attr name="maxLength" format="integer|reference" />
+        <attr name="text" />
+        <attr name="textColor" />
+        <attr name="textSize" />
+        <attr name="mask" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="NumInputView">
+        <attr name="paddingZero" format="boolean"/>
+    </declare-styleable>
+
+    <!-- -->
+    <declare-styleable name="FormatInputView">
+        <attr name="format" format="enum">
+            <enum name="ip" value="1" />
+            <enum name="date" value="2" />
+            <enum name="time" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <!-- -->
+    <declare-styleable name="LabelTextView">
+        <attr name="label" format="string|reference" />
+        <attr name="text" />
+        <attr name="textColor" />
+        <attr name="textSize" />
+    </declare-styleable>
+
+    <declare-styleable name="CameraOverlay">
+        <attr name="textSize" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="mirror" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="KeyboardCtrl">
+        <attr name="sizeMode" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="WirelessNetworkView">
+        <attr name="imageResType" format="string"/>
+    </declare-styleable>
+</resources>

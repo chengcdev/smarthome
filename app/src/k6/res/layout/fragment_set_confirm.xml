@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mili.smarthome.tkj.view.SetOperateView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_201"
+    android:id="@+id/rootview"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/dp_256"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_60"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_15" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_36"
+                android:layout_margin="@dimen/dp_4"
+                android:background="@drawable/main_btn_bg"
+                android:text="@string/pub_cancel"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_15" />
+
+            <Button
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btn_confirm"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_36"
+                android:layout_margin="@dimen/dp_4"
+                android:background="@drawable/main_btn_bg"
+                android:text="@string/pub_confirm"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_15" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</com.mili.smarthome.tkj.view.SetOperateView>

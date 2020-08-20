@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="48dp"
+    android:viewportWidth="96"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="@color/transparent"
+        android:pathData="M0,0h96v48h-96z"/>
+    <path
+        android:pathData="M0,48L96,48"
+        android:strokeWidth="5"
+        android:strokeColor="?attr/btn_bg_checked"/>
+</vector>

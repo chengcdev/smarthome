@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.mili.smarthome.tkj.set.widget.MainLayoutView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_layout_height"
+        android:background="@drawable/title_back">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/SettingTitleStyle"
+            android:text="@string/face_scan_hint4"/>
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            style="@style/SettingTitleStyle"
+            android:layout_above="@id/tv_title"
+            android:text="@string/face_enrollment_hint2"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keybordview_layout_height"
+        android:layout_below="@+id/headerLayout">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/lin_bottom">
+
+            <org.linphone.mediastream.video.display.GL2JNIView
+                android:id="@+id/sv_receive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextureView
+                android:id="@+id/tv_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <com.mili.smarthome.tkj.face.FaceDetectView
+                android:id="@+id/detectView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_warning"
+            style="@style/SettingTitleStyle"
+            android:layout_above="@+id/lin_bottom"
+            android:layout_marginBottom="@dimen/qb_px_16"
+            android:text="@string/face_scan_hint1"/>
+
+        <LinearLayout
+            android:id="@+id/lin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+                android:id="@+id/key_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:imageSouces="@drawable/key_cancle"/>
+        </LinearLayout>
+    </RelativeLayout>
+</com.mili.smarthome.tkj.set.widget.MainLayoutView>

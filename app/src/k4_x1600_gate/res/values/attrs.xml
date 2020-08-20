@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="button_bg" format="color|reference" />
+    <attr name="button_bg_checked" format="color|reference" />
+    <attr name="button_bg_pressed" format="color|reference" />
+
+</resources>

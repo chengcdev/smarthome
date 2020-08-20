@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mili.smarthome.tkj.set.widget.MainLayoutView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/SettingTitleStyle"
+        android:layout_alignParentTop="true"
+        />
+
+    <FrameLayout
+        android:layout_below="@+id/tv_title"
+        android:id="@+id/fl_container"
+        android:layout_above="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/top_layout_height"
+        android:layout_height="@dimen/keybordview_layout_height">
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/lin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+                android:id="@+id/key_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:imageSouces="@drawable/key_last">
+
+            </com.mili.smarthome.tkj.main.widget.KeyBoardItemView>
+
+            <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/key_next"
+                app:imageSouces="@drawable/key_next"
+                >
+
+            </com.mili.smarthome.tkj.main.widget.KeyBoardItemView>
+
+            <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+                android:id="@+id/key_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:imageSouces="@drawable/key_cancle">
+
+            </com.mili.smarthome.tkj.main.widget.KeyBoardItemView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_page"
+            android:layout_margin="10px"
+            android:textSize="30px"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/lin_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+</com.mili.smarthome.tkj.set.widget.MainLayoutView>
+

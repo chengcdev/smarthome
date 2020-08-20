@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:paddingBottom="@dimen/dp_60"
+             android:background="@drawable/comm_backgroup2">
+
+
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/dp_480"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_220"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/comm_info_back"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="@string/face_manage_hint8"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_18"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:paddingLeft="@dimen/dp_64"
+                android:paddingRight="@dimen/dp_64"
+                android:text="@string/face_manage_hint9"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_12"/>
+
+            <include layout="@layout/common_back_layout" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

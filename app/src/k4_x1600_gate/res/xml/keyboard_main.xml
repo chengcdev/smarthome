@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="@dimen/dp_8" android:verticalGap="@dimen/dp_8"
+    android:keyWidth="33.3333%p" android:keyHeight="5%p">
+
+    <Row>
+        <Key android:codes="49" android:keyIcon="@drawable/key_1"/>
+        <Key android:codes="50" android:keyIcon="@drawable/key_2"/>
+        <Key android:codes="51" android:keyIcon="@drawable/key_3"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="52" android:keyIcon="@drawable/key_4"/>
+        <Key android:codes="53" android:keyIcon="@drawable/key_5"/>
+        <Key android:codes="54" android:keyIcon="@drawable/key_6"/>
+    </Row>
+
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="55" android:keyIcon="@drawable/key_7"/>
+        <Key android:codes="56" android:keyIcon="@drawable/key_8"/>
+        <Key android:codes="57" android:keyIcon="@drawable/key_9"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="-3" android:keyIcon="@drawable/key_cancel"/>
+        <Key android:codes="48" android:keyIcon="@drawable/key_0"/>
+        <Key android:codes="-4" android:keyIcon="@drawable/key_lock"/>
+    </Row>
+</Keyboard>

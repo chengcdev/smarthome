@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RadioView">
+        <attr name="groupName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="VerticalBannerView">
+        <attr name="gap" format="integer" />
+        <attr name="animDuration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="NavigationBar">
+        <attr name="orientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="cellCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="KeyButton">
+        <attr name="leftImage" format="reference" />
+        <attr name="rightImage" format="reference" />
+        <attr name="keymode" format="integer" />
+        <attr name="maxlen" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RingProgressBarView">
+        <attr name="radius" format="dimension" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="circleColor" format="color" />
+        <attr name="ringColor" format="color" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="KeyBoardItemView">
+        <attr name="imageSouces" format="reference" />
+        <attr name="backGround" format="reference" />
+        <attr name="callView" format="boolean" />
+        <attr name="showBtnCall" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SeekCtrl">
+        <attr name="Mode" format="integer" />
+        <attr name="TextSize" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomInputView">
+        <attr name="inputType" format="integer" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+
+    <string-array name="Elec_SceneMode">
+        <item>会客模式</item>
+        <item>就餐模式</item>
+        <item>夜间模式</item>
+        <item>节电模式</item>
+        <item>普通模式</item>
+    </string-array>
+
+    <string-array name="Bt_Oper">
+        <item>删除用户</item>0
+        <item>设置门常开</item>1
+        <item>取消门常开 </item>2
+        <item>振铃</item>3
+    </string-array>
+    <string-array name="Bt_pictype">
+        <item>人体感应拍照</item>1
+        <item>三次操作错误拍照 </item>2
+    </string-array>
+
+    <string-array name="Bt_openlock_dev">
+        <item>本机</item>0
+        <item>门前机</item>1
+        <item>手机</item>2
+    </string-array>
+
+    <string-array name="Bt_locktype">
+        <item>机械开锁</item>0
+        <item>密码开锁</item>1
+        <item>刷卡开锁</item>2
+        <item>指纹开锁</item>3
+        <item>人脸识别开锁</item>4
+        <item></item>5
+        <item>访客开锁</item>6
+        <item>监视开锁</item>7
+        <item>手机开锁</item>8
+        <item>临时授权开锁</item>9
+
+    </string-array>
+
+
+    <declare-styleable name="AutoScrollView">
+
+        <attr name="direct" format="integer" />
+
+    </declare-styleable>
+</resources>

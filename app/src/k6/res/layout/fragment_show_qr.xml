@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/window_bg"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/dp_60"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/please_scan_door"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_24" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
+                android:id="@+id/img_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0S"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_24" />
+
+    </LinearLayout>
+
+</LinearLayout>

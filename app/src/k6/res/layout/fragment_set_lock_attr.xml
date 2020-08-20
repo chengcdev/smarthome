@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_320"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                style="@style/set_main_tv_style"
+                android:text="@string/setting_03" />
+
+            <ImageView
+                style="@style/set_img_arrow_style"/>
+
+            <TextView
+                style="@style/set_main_tv_style"
+                android:text="@string/setting_030101" />
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/set_img_arrow_style" />
+
+                <TextView
+                    style="@style/set_main_tv_style"
+                    android:text="@string/setting_030102" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/horizontal_line_layout" />
+
+        <com.mili.smarthome.tkj.view.SetOperateView
+            android:id="@+id/rootview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="@dimen/dp_320"
+                    android:layout_height="@dimen/dp_201"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+
+        </com.mili.smarthome.tkj.view.SetOperateView>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/common_back_layout" />
+
+</FrameLayout>

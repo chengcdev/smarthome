@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- 黑色主题 -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/WndAnimStyle</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- 自定义属性 -->
+        <item name="window_bg">@drawable/wnd_bg_black</item>
+        <item name="btn_bg">@color/btn_black</item>
+        <item name="btn_bg_pressed">@color/btn_blue</item>
+        <item name="btn_bg_checked">@color/btn_blue</item>
+        <item name="call_portrait">@drawable/portrait_black</item>
+    </style>
+
+    <!-- 蓝色主题 -->
+    <style name="AppTheme.Blue" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/WndAnimStyle</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- 自定义属性 -->
+        <item name="window_bg">@drawable/wnd_bg_blue</item>
+        <item name="btn_bg">@color/btn_blue</item>
+        <item name="btn_bg_pressed">@color/btn_black</item>
+        <item name="btn_bg_checked">@color/btn_black</item>
+        <item name="call_portrait">@drawable/portrait_blue</item>
+    </style>
+
+    <style name="WndAnimStyle" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+</resources>

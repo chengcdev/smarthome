@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:paddingBottom="@dimen/dp_60"
+             android:background="@drawable/comm_backgroup2">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp_90"
+        android:layout_marginRight="@dimen/dp_90"
+        android:background="@drawable/comm_info_back">
+
+        <FrameLayout
+            android:id="@+id/fl_confirm"
+            android:layout_width="@dimen/dp_225"
+            android:layout_height="@dimen/dp_128"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_24">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/face_manage_del_confirm"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_18"/>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="@dimen/dp_64"
+                android:layout_height="@dimen/dp_36"
+                android:layout_gravity="left|bottom"
+                android:layout_margin="@dimen/dp_4"
+                android:background="@drawable/main_btn_bg"
+                android:text="@string/pub_cancel"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_16"/>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="@dimen/dp_64"
+                android:layout_height="@dimen/dp_36"
+                android:layout_gravity="right|bottom"
+                android:layout_margin="@dimen/dp_4"
+                android:background="@drawable/main_btn_bg"
+                android:text="@string/pub_confirm"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_16"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/face_manage_del_suc"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_40"
+            android:visibility="gone"/>
+    </FrameLayout>
+</FrameLayout>

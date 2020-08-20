@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_face"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mili.smarthome.tkj.face.camera.CameraPreview
+            android:id="@+id/preview2"
+            android:layout_width="118dp"
+            android:layout_height="110dp"
+            android:layout_gravity="bottom"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_64"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_hint1"
+                android:layout_width="@dimen/dp_65"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/face_scan_hint1"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_15"/>
+
+            <TextView
+                android:id="@+id/tv_hint2"
+                android:layout_width="@dimen/dp_65"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_32"
+                android:gravity="center"
+                android:text="@string/face_scan_hint2"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_15"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/dp_32"
+            android:drawableTop="@drawable/img_edit"
+            android:text="@string/pub_edit"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_14"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_96"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/face_manage_hint1"
+                android:textColor="@color/txt_blue"
+                android:textSize="@dimen/sp_15"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_24"
+                android:drawableLeft="@drawable/img_edit"
+                android:drawablePadding="@dimen/dp_4"
+                android:text="@string/pub_add"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_12"
+                android:drawableLeft="@drawable/img_edit"
+                android:drawablePadding="@dimen/dp_4"
+                android:text="@string/pub_del"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="@dimen/dp_32"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:drawableTop="@drawable/face_toggle"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_14" />
+
+        <FrameLayout
+            android:id="@+id/fl_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp_96"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_96">
+
+            <org.linphone.mediastream.video.display.GL2JNIView
+                android:id="@+id/sv_receive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextureView
+                android:id="@+id/tv_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <com.mili.smarthome.tkj.face.FaceDetectView
+                android:id="@+id/detectView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+    </FrameLayout>
+
+    <ViewStub
+        android:id="@+id/stub_del"
+        android:layout_width="@dimen/dp_225"
+        android:layout_height="@dimen/dp_128"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_24"
+        android:inflatedId="@+id/fl_del"
+        android:layout="@layout/layout_face_del" />
+
+    <TextView
+        android:id="@+id/tv_del_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/setting_suc"
+        android:textColor="@color/txt_white"
+        android:textSize="@dimen/sp_48"
+        android:visibility="gone"/>
+
+</FrameLayout>

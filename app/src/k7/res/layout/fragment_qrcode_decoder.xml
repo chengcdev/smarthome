@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_layout_height"
+        android:background="@drawable/title_back">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/SettingTitleStyle"
+            android:layout_marginTop="@dimen/qb_px_30"
+            android:text="@string/qr_tip_1" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keybordview_layout_height"
+        android:layout_below="@+id/headerLayout">
+
+        <FrameLayout
+            android:layout_above="@+id/lin_bottom"
+            android:id="@+id/rl_capture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <org.linphone.mediastream.video.display.GL2JNIView
+                android:id="@+id/recv_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextureView
+                android:id="@+id/preview_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.mili.widget.zxing.ViewfinderView
+                android:id="@+id/viewfinder_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/SettingTitleStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/qb_px_16"
+            android:text="@string/qr_tip_2" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

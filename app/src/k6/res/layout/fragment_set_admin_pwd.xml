@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="@dimen/dp_320"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/set_main_tv_style"
+            android:layout_gravity="left"
+            android:text="@string/setting_0204" />
+
+        <include layout="@layout/horizontal_line_layout" />
+
+
+    </LinearLayout>
+
+
+    <com.mili.smarthome.tkj.view.SetOperateView
+        android:id="@+id/rootview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_256"
+            android:layout_height="@dimen/dp_100"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/set_input_tv_style"
+                    android:text="@string/setting_admin_pwd1" />
+
+
+                <com.mili.smarthome.tkj.widget.NumInputView
+                    android:id="@+id/tv_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:mask="true"
+                    app:maxLength="8"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_12" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/set_input_tv_style"
+                    android:text="@string/setting_admin_pwd2" />
+
+
+                <com.mili.smarthome.tkj.widget.NumInputView
+                    android:id="@+id/tv_pwd_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:mask="true"
+                    app:maxLength="8"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/horizontal_line_layout" />
+
+        <include layout="@layout/set_keyboard_layout" />
+
+
+    </com.mili.smarthome.tkj.view.SetOperateView>
+
+
+</LinearLayout>

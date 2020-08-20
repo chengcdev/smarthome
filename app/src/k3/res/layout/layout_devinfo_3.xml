@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/devinfo_page_3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_photo_visitor"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/device_info_3" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_photo_err_pwd"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/device_info_4" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_photo_hold_pwd"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/device_info_5" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_photo_call_center"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/device_info_18" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_photo_face_open"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/device_info_19" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_200"
+        android:orientation="vertical">
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_photo_finger_open"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/device_info_20" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_photo_card_open"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/device_info_21" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_photo_pwd_open"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/device_info_22" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_photo_qr_open"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/device_info_23" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_photo_face_stranger"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/device_info_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginRight="@dimen/dp_30"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/turn_hint"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_15" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:src="@drawable/key_up" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_2"
+            android:src="@drawable/key_down" />
+    </LinearLayout>
+</FrameLayout>

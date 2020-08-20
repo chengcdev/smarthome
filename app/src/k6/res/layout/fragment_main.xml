@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/comm_backgroup">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_30">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/sp_22" />
+
+        <LinearLayout
+            android:layout_below="@+id/tv_time"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.mili.smarthome.tkj.widget.AuthImageView
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15" />
+
+            <com.mili.smarthome.tkj.widget.WirelessNetworkView
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/main_location"
+                />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:id="@+id/tv_deviceno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_location"
+                android:layout_toRightOf="@+id/tv_location"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

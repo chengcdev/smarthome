@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mili.smarthome.tkj">
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service android:name=".main.service.ScreenService" />
+
+        <activity
+            android:name=".main.activity.WelcomeActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="mili.intent.action.RESET" />
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="mili.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.activity.MainActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".main.qrcode.CaptureActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".main.face.activity.WffrFaceRecogActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".main.face.activity.WffrFaceEnrollActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".main.face.activity.MegviiFaceRecogActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".main.face.activity.MegviiFaceEnrollActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".main.face.activity.FaceManageActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".main.face.activity.FaceDeleteActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".main.face.activity.FacePromptActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".set.activity.HintActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".set.activity.DeviceInfoActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".set.activity.CallCenterActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".main.activity.direct.DirectPressMainActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".main.activity.direct.DirectPressLetterActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".main.activity.direct.DirectPressEditActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".main.activity.ScreenSaverActivity"
+            android:launchMode="singleTask" />
+
+    </application>
+
+</manifest>

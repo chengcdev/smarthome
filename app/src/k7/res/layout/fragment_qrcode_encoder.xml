@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/backgroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/qb_px_100"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/SettingTitleStyle"
+                android:text="@string/qr_tip_6" />
+
+            <TextView
+                android:id="@+id/tv_count_time"
+                style="@style/SettingTitleStyle"
+                android:layout_marginTop="@dimen/qb_px_20"
+                android:textColor="@color/green_color"
+                android:text="0s" />
+
+            <ImageView
+                android:id="@+id/img_qr"
+                android:layout_marginTop="@dimen/qb_px_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

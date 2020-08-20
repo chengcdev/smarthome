@@ -1,0 +1,55 @@
+
+1、人脸管理接口（注册、删除、获取剩余个数等）
+
+    ./mian/../appfunc/facefunc/FacePresenter.java
+	
+	
+2、人脸管理实现类
+
+    EI人脸管理实现类:
+	./mian/../appfunc/facefunc/WffrFacePresenterImpl.java
+	
+	Face++人脸管理实现类:
+	./mian/../appfunc/facefunc/MegviiFacePresenterImpl.java
+	
+	
+3、人脸管理代理类
+
+    ./mian/../appfunc/facefunc/FacePresenterProxy.java
+	
+	# 应用程序初始化时，根据Face++授权文件是否存在，判断使用Face++还是EI。
+	# 存在则创建实例MegviiFacePresenterImpl，否则创建实例WffrFacePresenterImpl，设置给代理类。
+	# 上位机注册/删除人脸的回调，只需调用代理类的相关方法，无需关心具体的实现。
+	
+	
+	
+4、人脸坐标画框类
+
+    ./mian/../face/FaceDetectView.java
+	
+	
+5、人脸坐标适配器（用于适配不同人脸识别SDK的识别结果，转化成统一的人脸信息供画框类使用）
+
+    ./mian/../face/FaceInfoAdapter.java
+    ./mian/../face/wffr/WffrFaceInfoAdapter.java
+    ./mian/../face/megvii/MegviiFaceInfoAdapter.java
+	
+
+6、EI SDK接口封装
+
+    ./main/java/com/wf/
+	
+	
+7、FACE++ SDK接口封装
+
+    ./mian/../face/megvii/
+	
+	
+8、人脸信息存储
+
+    ./mian/../entities/FaceWffrModel.java
+    ./mian/../entities/FaceMegviiModel.java
+	
+    ./mian/../dao/WffrFaceDao.java
+    ./mian/../dao/MegviiFaceDao.java
+	

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mili.smarthome.tkj.set.widget.MainLayoutView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroup">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/top_layout_height"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keybordview_layout_height">
+
+        <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+            android:id="@+id/key_cancle"
+            android:layout_alignParentBottom="true"
+            app:imageSouces="@drawable/key_cancle"
+            app:backGround="@drawable/keyboard_btn_long_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.mili.smarthome.tkj.main.widget.KeyBoardItemView>
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img_connect"
+                android:src="@drawable/call_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/img_connect"
+                android:id="@+id/rl_tv_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_connect_state"
+                    android:layout_marginTop="10px"
+                    android:textSize="28px"
+                    style="@style/KeyBoardText" />
+
+                <TextView
+                    android:id="@+id/tv_open_door"
+                    android:visibility="gone"
+                    android:layout_marginTop="10px"
+                    android:textSize="28px"
+                    style="@style/KeyBoardText" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_below="@+id/rl_tv_connect"
+                android:id="@+id/tv_num"
+                android:layout_marginTop="10px"
+                android:text=""
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img_open_door"
+                android:src="@drawable/door_open_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.mili.smarthome.tkj.set.widget.MainLayoutView>

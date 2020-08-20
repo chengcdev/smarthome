@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_devtype"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_tk_no"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_room_start"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_floor_count"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_room_count"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_unlock_type"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_unlock_time"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_door_check"
+            style="@style/devinfo_tv_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_240"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_door_alarm"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_door_upload"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_cell_no"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_card_free"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_face_free"
+            style="@style/devinfo_tv_style"/>
+
+
+        <TextView
+            android:id="@+id/tv_fingerprint_free"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_dev_no"
+            style="@style/devinfo_tv_style"/>
+    </LinearLayout>
+
+</FrameLayout>

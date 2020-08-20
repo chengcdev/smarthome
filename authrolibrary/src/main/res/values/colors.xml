@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#ffff00</color>
+
+    <color name="window_bg">#000000</color>
+
+    <color name="preference_back">#000000</color>
+    <color name="btn_return_color">#000000</color>
+    <color name="btnbk_sel_black">#000000</color>
+    <color name="btnbk_black">#000000</color>
+    <color name="preference_back_select">#000000</color>
+
+    <color name="translate">#00000000</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#cdcdcd</color>
+    <color name="edit_keyboard_text_color">#3F51B5</color>
+
+    <color name="darkgray">#ff444444</color><!--暗灰色 -->
+
+    <color name="wangnl_blue">#00A0FF</color>
+    <color name="main_fun_view_blue">#968FD2F3</color>
+    <color name="main_fun_view_gray">#96000000</color><!--暗灰色 加点透明色-->
+
+    <color name="setting_list_line">#20cdcdcd</color>
+    <color name="main_top_city_bg">#808FD2F3</color>
+    <color name="main_titlebk_black">#9900A0E9</color>
+    <color name="main_titlebk_black_b">#808FD2F3</color>
+
+    <color name="dodgerblue">#1E90FF</color>
+    <color name="home_elec_text_unselec">#A3AFB2</color>
+    <color name="listview_line_bg">#ff505153</color>
+
+
+    <color name="pm_text">#FFC9EDEF</color>
+    <color name="co_text">#FF85dda8</color>
+    <color name="co2_text">#FFe2608b</color>
+    <color name="humidity_text">#FFe2db83</color>
+    <color name="ch2o_text">#FFabf4ff</color>
+    <color name="vocgrade_text">#FF7CCDEA</color>
+
+    <color name="pm_level_color_0">#9af125</color>
+    <color name="pm_level_color_1">#fefa56</color>
+    <color name="pm_level_color_2">#fab13b</color>
+    <color name="pm_level_color_3">#f6030d</color>
+    <color name="pm_level_color_4">#a8022b</color>
+    <color name="pm_level_color_5">#5f0130</color>
+
+    <color name="transparent">#00000000</color>
+</resources>

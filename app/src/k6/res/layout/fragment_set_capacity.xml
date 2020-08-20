@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_20"
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="@string/setting_capacity"
+            android:layout_gravity="left"
+            style="@style/set_main_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/horizontal_line_layout" />
+
+        <TextView
+            android:id="@+id/tv_total_capacity"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/setting_total_capacity"
+            android:layout_gravity="center_horizontal"
+            style="@style/set_main_tv_style"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_used_capacity"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/setting_used_capacity"
+            android:layout_gravity="center_horizontal"
+            style="@style/set_main_tv_style"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_residual_capacity"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/setting_residual_capacity"
+            android:layout_gravity="center_horizontal"
+            style="@style/set_main_tv_style"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/common_back_layout" />
+
+</FrameLayout>

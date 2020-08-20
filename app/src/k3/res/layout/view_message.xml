@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/txt_white"
+        android:textSize="@dimen/sp_22" />
+
+    <com.mili.smarthome.tkj.widget.ScrollTextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_48"
+        android:minLines="6"
+        android:maxLines="6"
+        android:singleLine="false"
+        android:textColor="@color/txt_white"
+        android:textSize="@dimen/sp_18" />
+
+</FrameLayout>

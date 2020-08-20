@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.mili.smarthome.tkj.view.KeyBoardView
+        android:layout_centerInParent="true"
+        android:id="@+id/keyboardview"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="@dimen/dp_210"
+        >
+
+    </com.mili.smarthome.tkj.view.KeyBoardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/window_bg"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_280"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_gravity="center_horizontal"/>
+
+    <!--<com.mili.smarthome.tkj.main.view.HintView-->
+        <!--android:id="@+id/hv_hint"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dp_280"-->
+        <!--android:layout_marginTop="@dimen/dp_0"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:background="?attr/window_bg"/>-->
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_285"
+        android:orientation="vertical">
+
+        <View android:layout_width="@dimen/dp_288"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal"/>
+
+        <FrameLayout
+            android:layout_width="@dimen/dp_288"
+            android:layout_height="@dimen/dp_65"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/radiogrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/main_password"
+                    style="@style/main_btn_style"
+                    android:text="@string/unlock_by_password"
+                    android:drawableTop="@drawable/main_lock"/>
+
+                <RadioButton
+                    android:id="@+id/main_qrcode"
+                    style="@style/main_btn_style"
+                    android:text="@string/unlock_by_qrcode"
+                    android:drawableTop="@drawable/main_scanqr"/>
+
+                <RadioButton
+                    android:id="@+id/main_center"
+                    style="@style/main_btn_style"
+                    android:text="@string/call_center"
+                    android:drawableTop="@drawable/main_center"/>
+
+                <RadioButton
+                    android:id="@+id/main_resident"
+                    style="@style/main_btn_style"
+                    android:text="@string/call_resident"
+                    android:drawableTop="@drawable/main_resident"/>
+
+                <RadioButton
+                    android:id="@+id/main_face"
+                    style="@style/main_btn_style"
+                    android:text="@string/unlock_by_face"
+                    android:drawableTop="@drawable/main_face"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <com.mili.smarthome.tkj.base.KeyboardCtrl
+            android:id="@+id/keyboardutil"
+            android:layout_width="@dimen/dp_288"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_gravity="center_horizontal"
+            android:background="?attr/window_bg"
+            android:keyBackground="@drawable/button_bg"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</FrameLayout>

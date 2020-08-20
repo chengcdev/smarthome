@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_60">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_devinfo"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_15"/>
+
+        <TextView
+            android:id="@+id/tv_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp_12"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_15"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginLeft="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_3"
+        android:layout_marginRight="@dimen/dp_60"
+        android:background="@color/white"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_12">
+
+        <ViewStub
+            android:id="@+id/stub_devinfo1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inflatedId="@+id/devinfo_page_1"
+            android:layout="@layout/layout_devinfo_1" />
+
+        <ViewStub
+            android:id="@+id/stub_devinfo2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inflatedId="@+id/devinfo_page_2"
+            android:layout="@layout/layout_devinfo_2" />
+
+        <ViewStub
+            android:id="@+id/stub_devinfo3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inflatedId="@+id/devinfo_page_3"
+            android:layout="@layout/layout_devinfo_3" />
+
+        <ViewStub
+            android:id="@+id/stub_devinfo4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inflatedId="@+id/devinfo_page_4"
+            android:layout="@layout/layout_devinfo_4" />
+
+        <ViewStub
+            android:id="@+id/stub_devinfo5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inflatedId="@+id/devinfo_page_5"
+            android:layout="@layout/layout_devinfo_5" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mili.smarthome.tkj.set.widget.MainLayoutView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mili.smarthome.tkj.main.widget.SetSuccessView
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_layout_height"
+        android:background="@drawable/title_back">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/SettingTitleStyle"
+            android:layout_alignParentTop="true"
+             />
+
+        <LinearLayout
+            android:layout_marginTop="20px"
+            android:layout_below="@id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="170px"
+                    style="@style/SettingTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/setting_card_room_no" />
+
+                <TextView
+                    android:id="@+id/tv_room_no"
+                    style="@style/SettingTextViewStyle"
+                    android:layout_width="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15px"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="170px"
+                    style="@style/SettingTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/setting_name" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:maxLength="30"
+                    style="@style/SettingTextViewStyle"
+                    android:layout_width="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.mili.smarthome.tkj.main.widget.SetSuccessView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_call"
+        android:layout_below="@id/root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keybordview_layout_height"
+        >
+
+        <com.mili.smarthome.tkj.main.widget.KeyBoardRecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.mili.smarthome.tkj.main.widget.KeyBoardRecyclerView>
+
+    </RelativeLayout>
+
+
+</com.mili.smarthome.tkj.set.widget.MainLayoutView>

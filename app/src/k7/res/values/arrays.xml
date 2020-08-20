@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Num_keyboard">
+        <item >*</item>0
+        <item >0</item>1
+        <item >#</item>2
+        <item >3</item>3
+        <item >4</item>4
+        <item >5</item>6
+        <item >6</item>7
+        <item >7</item>8
+        <item >8</item>9
+        <item >9</item>10
+    </string-array>
+
+    <string-array name="setting_list">
+        <item >卡管理</item>0
+        <item >密码管理</item>1
+        <item >门禁设置</item>2
+        <item >住户设置</item>3
+        <item >系统设置</item>4
+        <item >设备信息</item>5
+        <item >声音设置</item>6
+        <item >恢复出厂</item>7
+        <item >蓝牙开门器</item>8
+    </string-array>
+
+    <string-array name="setting_systerm_list">
+        <item >梯口号设置</item>0
+        <item >网络设置</item>1
+        <item >编号规则设置</item>2
+        <item >高级设置</item>3
+    </string-array>
+
+    <string-array name="setting_senior_list">
+        <item >密码进门模式</item>0
+        <item >报警参数</item>1
+        <item >拍照参数</item>2
+        <item >省电模式</item>3
+        <item >动态密码</item>4
+        <item >屏保设置</item>5
+        <item >灵敏度设置</item>6
+        <item >呼叫方式</item>7
+    </string-array>
+
+    <string-array name="setting_senior_pwd_model">
+        <item >简易模式</item>0
+        <item >高级模式</item>1
+    </string-array>
+
+    <string-array name="setting_senior_alarm">
+        <item >不启用</item>0
+        <item >启用</item>1
+    </string-array>
+
+    <string-array name="setting_senior_camera">
+        <item >不启用</item>0
+        <item >启用</item>1
+    </string-array>
+
+    <string-array name="setting_senior_power_save">
+        <item >关闭</item>0
+        <item >启用</item>1
+    </string-array>
+
+    <string-array name="setting_senior_pwd_dynamic">
+        <item >关闭</item>0
+        <item >启用</item>1
+    </string-array>
+
+    <string-array name="setting_senior_screen_pro">
+        <item >关闭</item>0
+        <item >启用</item>1
+    </string-array>
+
+    <string-array name="setting_senior_sensitivity">
+        <item >高</item>0
+        <item >中</item>1
+        <item >低</item>2
+    </string-array>
+
+    <string-array name="setting_card_manage">
+        <item >添加卡</item>0
+        <item >删除卡</item>1
+        <item >清空卡</item>2
+    </string-array>
+
+    <string-array name="setting_pwd_manage">
+        <item >添加密码</item>0
+        <item >删除密码</item>1
+        <item >清空密码</item>2
+        <item >修改管理密码</item>2
+    </string-array>
+
+    <string-array name="setting_entrance_guard">
+        <item >锁属性设置</item>0
+        <item >门状态设置</item>1
+        <item >人脸识别</item>2
+        <item >扫码开门</item>3
+        <item >人体感应</item>4
+    </string-array>
+
+    <string-array name="setting_open_lock">
+        <item >常闭</item>0
+        <item >常开</item>1
+    </string-array>
+
+    <string-array name="setting_door_state">
+        <item >否</item>0
+        <item >是</item>1
+    </string-array>
+
+    <string-array name="setting_door_saoma">
+        <item >禁用</item>0
+        <item >启用</item>1
+    </string-array>
+
+    <string-array name="setting_face">
+        <item >禁用</item>0
+        <item >启用</item>1
+        <item >清空人脸记录</item>2
+        <item >安全级别</item>3
+        <item >人脸活体检测</item>4
+        <!--<item >人脸识别阈值</item>5-->
+    </string-array>
+
+    <string-array name="setting_body_feel">
+        <item >触发开屏</item>0
+        <item >人脸识别</item>1
+        <item >扫码开门</item>2
+        <item >蓝牙开门器</item>3
+    </string-array>
+
+    <string-array name="setting_secury_lever">
+        <item >高</item>0
+        <item >正常</item>1
+        <item >普通</item>2
+    </string-array>
+
+    <string-array name="setting_volume">
+        <item >通话音量</item>0
+        <item >提示音</item>1
+        <item >按键语音</item>2
+    </string-array>
+
+    <string-array name="setting_volume_tip">
+        <item >否</item>0
+        <item >是</item>1
+    </string-array>
+
+    <string-array name="setting_choice_language">
+        <item >中文简体</item>0
+        <item >中文繁體</item>1
+        <item >English</item>2
+    </string-array>
+
+    <string-array name="setting_choice_card_num">
+        <item >6位</item>0
+        <item >8位</item>1
+    </string-array>
+
+    <string-array name="setting_choice_device_nature">
+        <item >梯口</item>0
+        <item >区口</item>1
+    </string-array>
+
+    <string-array name="setting_choice_call_type">
+        <item >编码式</item>0
+        <item >直按式</item>1
+    </string-array>
+
+    <string-array name="setting_enable_center">
+        <item >是</item>0
+        <item >否</item>1
+    </string-array>
+</resources>

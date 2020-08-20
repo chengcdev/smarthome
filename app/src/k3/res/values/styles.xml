@@ -1,0 +1,58 @@
+<resources>
+
+    <style name="main_btn_style">
+        <item name="android:layout_width">@dimen/dp_96</item>
+        <item name="android:layout_height">@dimen/dp_72</item>
+        <item name="android:layout_margin">@dimen/dp_4</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/dp_6</item>
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/main_btn_bg</item>
+    </style>
+
+    <style name="pwdtype_btn_style">
+        <item name="android:layout_width">@dimen/dp_0</item>
+        <item name="android:layout_height">@dimen/dp_48</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">@dimen/dp_1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/dp_28</item>
+        <item name="android:drawablePadding">@dimen/dp_12</item>
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/pwdtype_btn_bg</item>
+    </style>
+
+    <style name="call_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/main_btn_bg</item>
+        <item name="android:drawablePadding">@dimen/dp_16</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/dp_16</item>
+        <item name="android:paddingTop">@dimen/dp_6</item>
+        <item name="android:paddingRight">@dimen/dp_16</item>
+        <item name="android:paddingBottom">@dimen/dp_6</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="devinfo_lbltv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="textColor">@color/txt_white</item>
+        <item name="textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="devinfo_lbltv_style1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+        <item name="textColor">@color/txt_white</item>
+        <item name="textSize">@dimen/sp_14</item>
+    </style>
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.mili.smarthome.tkj.set.widget.MainLayoutView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_layout_height"
+        android:background="@drawable/title_back">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/top_layout_height_half"
+            android:layout_above="@id/ll_hint"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/face_manage_del_confirm"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/top_layout_height_half"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/key_ok"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_yes"
+                android:textColor="@color/white"
+                android:textSize="24sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/qb_px_60"
+                android:src="@drawable/key_cancle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_no"
+                android:textColor="@color/white"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keybordview_layout_height"
+        android:layout_below="@+id/headerLayout">
+
+        <LinearLayout
+            android:id="@+id/lin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/keyboard_item_height"
+            android:orientation="horizontal">
+
+            <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+                android:id="@+id/key_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:imageSouces="@drawable/key_ok"/>
+
+            <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible"/>
+
+            <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+                android:id="@+id/key_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:imageSouces="@drawable/key_cancle"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</com.mili.smarthome.tkj.set.widget.MainLayoutView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_64"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_hint1"
+            android:layout_width="@dimen/dp_65"
+            android:layout_height="wrap_content"
+            android:text="@string/face_scan_hint1"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_15"/>
+
+        <TextView
+            android:id="@+id/tv_hint2"
+            android:layout_width="@dimen/dp_65"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_32"
+            android:text="@string/qr_scan_tip"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_15"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp_96"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_96">
+
+        <org.linphone.mediastream.video.display.GL2JNIView
+            android:id="@+id/sv_receive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextureView
+            android:id="@+id/tv_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.mili.widget.zxing.ViewfinderView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+</FrameLayout>

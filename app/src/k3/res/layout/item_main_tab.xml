@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mili.smarthome.tkj.main.view.CheckableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_root"
+    android:layout_width="@dimen/dp_96"
+    android:layout_height="@dimen/dp_64"
+    android:layout_margin="@dimen/dp_4"
+    android:background="@drawable/main_btn_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_32"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_3"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_13"/>
+    </LinearLayout>
+</com.mili.smarthome.tkj.main.view.CheckableLayout>

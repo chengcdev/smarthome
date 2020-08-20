@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/comm_backgroup2">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_480"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_60">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_220"
+            android:layout_centerInParent="true"
+            android:background="@drawable/comm_info_back">
+
+            <ImageView
+                android:id="@+id/img_left_icon"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="@dimen/dp_200"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:src="@drawable/main_call_icon" />
+
+            <TextView
+                android:id="@+id/tv_open_door"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_left_icon"
+                android:gravity="center"
+                android:text="@string/call_center_confirm"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_32"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/lin_btn_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center_vertical"
+                android:layout_toRightOf="@+id/img_left_icon"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/call_center_confirm"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_18" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="4s"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_18" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:id="@+id/btn_call"
+                        android:layout_width="@dimen/dp_110"
+                        android:layout_height="@dimen/dp_50"
+                        android:background="@drawable/main_btn_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginRight="@dimen/dp_18"
+                            android:layout_width="@dimen/dp_35"
+                            android:layout_height="@dimen/dp_35"
+                            android:src="@drawable/main_call_connect" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pub_call"
+                            android:textColor="@color/txt_green"
+                            android:textSize="@dimen/dp_14" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="@dimen/dp_110"
+                        android:layout_height="@dimen/dp_50"
+                        android:background="@drawable/main_btn_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_35"
+                            android:layout_height="@dimen/dp_35"
+                            android:layout_marginRight="@dimen/dp_18"
+                            android:src="@drawable/main_call_cancel" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pub_cancel"
+                            android:textColor="@color/txt_red"
+                            android:textSize="@dimen/dp_14" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

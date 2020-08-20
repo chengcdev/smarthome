@@ -1,0 +1,109 @@
+<resources>
+
+    <style name="main_btn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/dp_60</item>
+        <item name="android:layout_margin">@dimen/dp_1</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/dp_6</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:drawablePadding">@dimen/dp_3</item>
+    </style>
+
+    <style name="face_btn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/dp_75</item>
+        <item name="android:layout_margin">@dimen/dp_2</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:drawablePadding">@dimen/dp_8</item>
+    </style>
+
+    <style name="pwdtype_btn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/dp_10</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:paddingBottom">@dimen/dp_5</item>
+        <item name="android:drawablePadding">@dimen/dp_5</item>
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/pwdtype_btn_bg</item>
+    </style>
+
+    <style name="call_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:drawablePadding">@dimen/dp_16</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/dp_16</item>
+        <item name="android:paddingTop">@dimen/dp_6</item>
+        <item name="android:paddingRight">@dimen/dp_16</item>
+        <item name="android:paddingBottom">@dimen/dp_6</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="set_btn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/dp_30</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">@dimen/dp_2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/button_bg</item>
+    </style>
+
+    <style name="devinfo_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <!-- 黑色主题 -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <!-- 自定义属性 -->
+        <item name="window_bg">@drawable/wnd_bg_black</item>
+        <item name="btn_bg">@color/btn_black</item>
+        <item name="btn_bg_pressed">@color/btn_blue</item>
+        <item name="btn_bg_checked">@color/btn_blue</item>
+        <item name="call_portrait">@drawable/portrait_black</item>
+
+        <item name="button_bg">@drawable/key_black_back</item>
+        <item name="button_bg_checked">@drawable/key_blue_back</item>
+        <item name="button_bg_pressed">@drawable/key_blue_back</item>
+    </style>
+
+    <!-- 蓝色主题 -->
+    <style name="AppTheme.Blue" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <!-- 自定义属性 -->
+        <item name="window_bg">@drawable/wnd_bg_blue</item>
+        <item name="btn_bg">@color/btn_blue</item>
+        <item name="btn_bg_pressed">@color/btn_black</item>
+        <item name="btn_bg_checked">@color/btn_black</item>
+        <item name="call_portrait">@drawable/portrait_blue</item>
+
+        <item name="button_bg">@drawable/key_blue_back</item>
+        <item name="button_bg_checked">@drawable/key_black_back</item>
+        <item name="button_bg_pressed">@drawable/key_black_back</item>
+    </style>
+
+</resources>

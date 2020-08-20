@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_20"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lin_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_320"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/set_main_tv_style"
+                    android:text="@string/setting_03" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:layout_marginRight="@dimen/dp_4"
+                    android:src="@drawable/set_head_left_icon" />
+
+                <TextView
+                    style="@style/set_main_tv_style"
+                    android:text="@string/setting_0305" />
+
+                <LinearLayout
+                    android:id="@+id/ll_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:layout_marginRight="@dimen/dp_4"
+                        android:src="@drawable/set_head_left_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        style="@style/set_main_tv_style"
+                        android:text="@string/setting_030501" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                layout="@layout/horizontal_line_layout"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <com.mili.smarthome.tkj.view.SetOperateView
+            android:id="@+id/rootview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lin_title"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_256"
+                android:layout_height="@dimen/dp_100"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:id="@+id/lin_room_no"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/dp_60"
+                        style="@style/set_input_tv_style"
+                        android:gravity="center"
+                        android:text="@string/setting_room_no" />
+
+                    <com.mili.smarthome.tkj.widget.NumInputView
+                        android:id="@+id/tv_room_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:maxLength="4"
+                        app:text="0000"
+                        app:textColor="@color/txt_white"
+                        app:textSize="@dimen/sp_12"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_record_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_record_tip1"
+                        style="@style/set_input_tv_style"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="@string/finger_print_tip1" />
+
+                    <TextView
+                        android:id="@+id/tv_record_tip2"
+                        style="@style/set_input_tv_style"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/finger_print_tip4" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/horizontal_line_layout" />
+
+            <include layout="@layout/set_keyboard_layout" />
+
+
+        </com.mili.smarthome.tkj.view.SetOperateView>
+
+        <include layout="@layout/common_back_layout" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

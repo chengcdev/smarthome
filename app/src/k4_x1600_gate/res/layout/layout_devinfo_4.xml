@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/devinfo_page_4"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_local_ip"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_subnet_mask"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_gateway_ip"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_dns"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_manager_ip"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_center_ip"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_media_ip"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_elevator_ip"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_face_ip"
+            style="@style/devinfo_tv_style"/>
+    </LinearLayout>
+</FrameLayout>

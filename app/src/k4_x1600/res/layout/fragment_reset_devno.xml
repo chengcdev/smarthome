@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/txt_white"
+        android:textSize="@dimen/sp_13"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_6"
+        android:background="@color/white"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_stair"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:text="@string/device_info_tkh"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_13"/>
+
+                <com.mili.smarthome.tkj.widget.NumInputView
+                    android:id="@+id/nv_tk_no"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_140"
+                    app:paddingZero="true"
+                    app:maxLength="2"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_13"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:text="@string/device_info_device_no"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_13"/>
+
+                <com.mili.smarthome.tkj.widget.NumInputView
+                    android:id="@+id/nv_dev_no"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_140"
+                    app:paddingZero="true"
+                    app:maxLength="4"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_13"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:text="@string/set_devno_unit"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_13"/>
+
+                <TextView
+                    android:id="@+id/tv_enabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_140"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_13"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:text="@string/device_info_qkh"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_13"/>
+
+                <com.mili.smarthome.tkj.widget.NumInputView
+                    android:id="@+id/nv_area_no"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_150"
+                    app:paddingZero="true"
+                    app:maxLength="2"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_13"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25">
+
+                <TextView
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:text="@string/set_devno_unit"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_13"/>
+
+                <TextView
+                    android:id="@+id/tv_area_enabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_150"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_13"/>
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <ImageButton
+            android:id="@+id/ib_up"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_30"
+            android:background="@drawable/button_bg"
+            android:src="@drawable/set_up_icon"/>
+
+        <ImageButton
+            android:id="@+id/ib_down"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_88"
+            android:background="@drawable/button_bg"
+            android:src="@drawable/set_down_icon"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_20"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="@dimen/dp_320"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <TextView
+                    style="@style/set_main_tv_style"
+                    android:text="@string/setting_03"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:layout_marginRight="@dimen/dp_4"
+                    android:src="@drawable/set_head_left_icon" />
+
+                <TextView
+                    android:text="@string/setting_0305"
+                    style="@style/set_main_tv_style" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:layout_marginRight="@dimen/dp_4"
+                        android:src="@drawable/set_head_left_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:text="@string/setting_030501"
+                        style="@style/set_main_tv_style" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/horizontal_line_layout"
+                android:visibility="visible"
+                />
+
+            <com.mili.smarthome.tkj.view.SetOperateView
+                android:id="@+id/rootview"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="@dimen/dp_320"
+                    android:layout_height="@dimen/dp_201"
+                    android:layout_gravity="center_horizontal" />
+
+
+            </com.mili.smarthome.tkj.view.SetOperateView>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/common_back_layout" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

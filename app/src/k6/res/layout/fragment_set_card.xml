@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mili.smarthome.tkj.view.SetOperateView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_256"
+        android:layout_height="@dimen/dp_100"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lin_room_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/set_input_tv_style"
+                android:gravity="center"
+                android:text="@string/setting_room_no" />
+
+
+            <com.mili.smarthome.tkj.widget.NumInputView
+                android:id="@+id/tv_room_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:maxLength="4"
+                app:textColor="@color/txt_white"
+                app:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_card_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/set_input_tv_style"
+                android:gravity="center"
+                android:text="@string/setting_card_no" />
+
+
+            <com.mili.smarthome.tkj.widget.NumInputView
+                android:id="@+id/tv_card_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:maxLength="8"
+                app:textColor="@color/txt_white"
+                app:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_line_layout" />
+
+    <include layout="@layout/set_keyboard_layout" />
+
+</com.mili.smarthome.tkj.view.SetOperateView>

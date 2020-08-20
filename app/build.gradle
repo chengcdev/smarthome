@@ -1,0 +1,312 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 27
+
+    Date date = new Date();
+
+    def releaseDate = date.format("yyyyMMdd", TimeZone.getTimeZone("UTC"));
+    def verCode = Integer.valueOf(releaseDate);
+
+    SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss_MMM dd yyyy", Locale.UK)
+    def buildVersionTime = "\"" + format.format(date) + "\"";
+    def softVersionType = "\"" + "V01.01.0015" + "\"";
+
+    defaultConfig {
+        applicationId "com.mili.smarthome.tkj"
+        minSdkVersion 22
+        targetSdkVersion 27
+        versionCode verCode
+        versionName "1.0.0"
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86', 'mips'
+        }
+        //编译时间
+        buildConfigField("String", "buildVersionTime", buildVersionTime)
+        //软件版本类型
+        buildConfigField("String", "softVersionType", softVersionType)
+    }
+
+    signingConfigs {
+        rk3368debug {
+            storeFile file("signFile/rk3368debug.jks")
+            storePassword '123456'
+            keyAlias 'aurine'
+            keyPassword '123456'
+            v2SigningEnabled false
+        }
+
+        x1600debug {
+            storeFile file("signFile/x1600debug.jks")
+            storePassword '123456'
+            keyAlias 'aurine'
+            keyPassword '123456'
+            v2SigningEnabled false
+        }
+
+        mt6737debug {
+            storeFile file("signFile/mt6737debug.jks")
+            storePassword '123456'
+            keyAlias 'aurine'
+            keyPassword '123456'
+            v2SigningEnabled false
+        }
+    }
+    // MODEL: 梯口机型号
+    // FUNC: 功能
+    flavorDimensions("MODEL", "FUNC")
+
+    productFlavors {
+
+        k3 {
+            dimension = 'MODEL'
+            applicationId 'com.mili.smarthome.tkj.k3'
+            minSdkVersion 22
+            targetSdkVersion 27
+            signingConfig signingConfigs.rk3368debug
+
+            // 设置设备型号给媒体库用(设备类型定义在maincommdefind)
+            buildConfigField("int", "DevType", "2000")
+        }
+
+        k4 {
+            dimension = 'MODEL'
+            applicationId 'com.mili.smarthome.tkj.k4'
+            minSdkVersion 22
+            targetSdkVersion 27
+            signingConfig signingConfigs.rk3368debug
+
+            // 设置设备型号给媒体库用(设备类型定义在maincommdefind)
+            buildConfigField("int", "DevType", "2001")
+        }
+
+        k6 {
+            dimension = 'MODEL'
+            applicationId 'com.mili.smarthome.tkj.k6'
+            minSdkVersion 22
+            targetSdkVersion 27
+            signingConfig signingConfigs.rk3368debug
+
+            // 设置设备型号给媒体库用(设备类型定义在maincommdefind)
+            buildConfigField("int", "DevType", "2002")
+        }
+
+        k7 {
+            dimension = 'MODEL'
+            applicationId 'com.mili.smarthome.tkj.k7'
+            minSdkVersion 22
+            targetSdkVersion 27
+            signingConfig signingConfigs.mt6737debug
+
+            // 设置设备型号给媒体库用(设备类型定义在maincommdefind)
+            buildConfigField("int", "DevType", "2003")
+        }
+
+        k4_x1600 {
+            dimension = 'MODEL'
+            applicationId 'com.mili.smarthome.tkj.k4_x1600'
+            minSdkVersion 27
+            targetSdkVersion 27
+            versionName "1.0.1"
+            signingConfig signingConfigs.x1600debug
+
+            // 设置设备型号给媒体库用(设备类型定义在maincommdefind)
+            buildConfigField("int", "DevType", "2004")
+        }
+
+        k4_x1600_gate {
+            dimension = 'MODEL'
+            applicationId 'com.mili.smarthome.tkj.k4_x1600'
+            minSdkVersion 27
+            targetSdkVersion 27
+            versionName "1.0.1"
+            signingConfig signingConfigs.x1600debug
+
+            // 设置设备型号给媒体库用(设备类型定义在maincommdefind)
+            buildConfigField("int", "DevType", "2004")
+        }
+
+        _Full {
+            // 完整版
+            dimension = 'FUNC'
+            //设置manifest的Uid
+            manifestPlaceholders = [SHARED_USER_ID: "android.uid.system"]
+        }
+
+        _Pad {
+            // pad版
+            dimension = 'FUNC'
+            //设置manifest的Uid
+            manifestPlaceholders = [SHARED_USER_ID: ""]
+        }
+    }
+
+    // 排除 k3_Pad、k4_x1600_Pad、k4_x1600_gate_Pad
+    android.variantFilter { variant ->
+        if (variant.getFlavors().get(1).name == '_Pad') {
+            if (variant.getFlavors().get(0).name == 'k3'
+                    || variant.getFlavors().get(0).name == 'k7'
+                    || variant.getFlavors().get(0).name == 'k4_x1600'
+                    || variant.getFlavors().get(0).name == 'k4_x1600_gate') {
+                variant.setIgnore(true)
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false  //不启用混淆Proguard
+            shrinkResources false //是否清理无用资源,依赖于minifyEnabled
+            zipAlignEnabled false //是否启用zipAlign压缩
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            /** 是否启用IPC功能 */
+            buildConfigField("boolean", "isEnabledIPC", "false")
+            /** 是否启用APN功能 */
+            buildConfigField("boolean", "isEnabledAPN", "false")
+            /** 是否启用卡时间、次数判断功能 */
+            buildConfigField("int", "isEnabledCardValid", "0")
+            /** 是否启用密码时间、次数判断功能*/
+            buildConfigField("boolean", "isEnabledPwdValid", "false")
+            /** 是否启用人脸时间、次数判断功能 */
+            buildConfigField("boolean", "isEnabledFaceValid", "false")
+        }
+
+        release {
+            minifyEnabled false  //不启用混淆Proguard
+            shrinkResources false //是否清理无用资源,依赖于minifyEnabled
+            zipAlignEnabled false //是否启用zipAlign压缩
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            /** 是否启用IPC功能 */
+            buildConfigField("boolean", "isEnabledIPC", "false")
+            /** 是否启用APN功能 */
+            buildConfigField("boolean", "isEnabledAPN", "false")
+            /** 是否启用卡时间、次数判断功能 */
+            buildConfigField("int", "isEnabledCardValid", "0")
+            /** 是否启用密码时间、次数判断功能*/
+            buildConfigField("boolean", "isEnabledPwdValid", "false")
+            /** 是否启用人脸时间、次数判断功能 */
+            buildConfigField("boolean", "isEnabledFaceValid", "false")
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def appName = "smarthome_tkj";
+            def flavorName = variant.flavorName;
+            def versionName = variant.versionName;
+            def buildType = variant.buildType.name;
+            outputFileName = "${appName}_${flavorName}_v${versionName}_${releaseDate}_${buildType}.apk"
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'   // aar目录
+        }
+        maven {
+            //添加stetho-realm代码仓库地址
+            url 'https://github.com/uPhyca/stetho-realm/raw/master/maven-repo'
+        }
+    }
+
+    sourceSets {
+        main {
+            jni.srcDirs = [] // This prevents the auto generation of Android.mk
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    //让系统的sdk 放置在framework.jar之后
+    preBuild {
+        doLast {
+            def imlFile = file(project.name + ".iml")
+            println('Change ' + project.name + '.iml order')
+            try {
+                def parsedXml = (new XmlParser()).parse(imlFile)
+                def jdkNode = parsedXml.component[1].orderEntry.find { it.'@type' == 'jdk' }
+                parsedXml.component[1].remove(jdkNode)
+                def sdkString = "Android API " + android.compileSdkVersion.substring("android-".length()) + " Platform"
+                new groovy.util.Node(parsedXml.component[1], 'orderEntry', ['type': 'jdk', 'jdkName': sdkString, 'jdkType': 'Android SDK'])
+                groovy.xml.XmlUtil.serialize(parsedXml, new FileOutputStream(imlFile))
+            } catch (FileNotFoundException e) {
+                // nop, iml not found
+            }
+        }
+    }
+
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    // 添加这两行,查看realm
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+//    implementation 'com.uphyca:stetho_realm:2.1.0'
+    // zxing
+    implementation 'com.google.zxing:core:3.3.3'
+    implementation project(':miwidget')
+    //授权
+    implementation project(path: ':authrolibrary')
+    compileOnly files('libs/framework.jar')
+    // linphone
+    implementation files('libs/linphone.jar')
+    // ftp
+    implementation 'commons-net:commons-net:3.6'
+    // dongdong
+    implementation files('libs/DongDeviceSdk_1.1.1.0.jar')
+
+    // tts
+    implementation(name:'MscTts-release', ext:'aar')
+
+//    //旷视Face++ 测试包
+//    implementation files('libs/FacePassAndroidSDK-month-release.aar')
+    //旷视Face++ 正式包
+    implementation files('libs/FacePassAndroidSDK-year-release.aar')
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.6'
+    implementation('org.apache.httpcomponents:httpmime:4.3.2') {
+        exclude module: "httpclient"
+    }
+    //地平线
+    k4_x1600Implementation files('libs/hobotlivenessif-release.aar')
+    k4_x1600Implementation files('libs/HRXCam-release.aar')
+    k4_x1600Implementation files('libs/hrxsys-release.aar')
+    k4_x1600Implementation files('libs/HRXTrans-release.aar')
+    k4_x1600Implementation files('libs/models-release.aar')
+    k4_x1600Implementation files('libs/sunrisesdk-release.aar')
+    k4_x1600Implementation files('libs/sunriseupdatesdk-release.aar')
+    k4_x1600Implementation files('libs/xwarehousesdk-release.aar')
+    //地平线
+    k4_x1600_gateImplementation files('libs/hobotlivenessif-release.aar')
+    k4_x1600_gateImplementation files('libs/HRXCam-release.aar')
+    k4_x1600_gateImplementation files('libs/hrxsys-release.aar')
+    k4_x1600_gateImplementation files('libs/HRXTrans-release.aar')
+    k4_x1600_gateImplementation files('libs/models-release.aar')
+    k4_x1600_gateImplementation files('libs/sunrisesdk-release.aar')
+    k4_x1600_gateImplementation files('libs/sunriseupdatesdk-release.aar')
+    k4_x1600_gateImplementation files('libs/xwarehousesdk-release.aar')
+    //属性动画
+    implementation files('libs/nineoldandroids-2.4.0.jar')
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+}

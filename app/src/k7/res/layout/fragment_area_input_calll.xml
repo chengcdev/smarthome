@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mili.smarthome.tkj.main.widget.SetSuccessView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/SettingTitleStyle"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="@dimen/qb_px_110"
+        android:layout_marginTop="10px"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_build"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_ldh"
+                style="@style/SettingTextViewStyle"
+                android:layout_width="120px"
+                android:layout_alignParentLeft="true"
+                android:text="@string/setting_ldh" />
+
+            <com.mili.smarthome.tkj.set.widget.inputview.CustomInputView
+                android:id="@+id/it_ldh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_ldh">
+
+            </com.mili.smarthome.tkj.set.widget.inputview.CustomInputView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:id="@+id/rl_dyh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px">
+
+            <TextView
+                android:id="@+id/tv_unit"
+                style="@style/SettingTextViewStyle"
+                android:layout_width="120px"
+                android:layout_alignParentLeft="true"
+                android:text="@string/setting_dyh" />
+
+            <com.mili.smarthome.tkj.set.widget.inputview.CustomInputView
+                android:id="@+id/it_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_unit">
+
+            </com.mili.smarthome.tkj.set.widget.inputview.CustomInputView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px">
+
+            <TextView
+                android:id="@+id/tv_room_no"
+                style="@style/SettingTextViewStyle"
+                android:layout_width="120px"
+                android:layout_alignParentLeft="true"
+                android:text="@string/setting_card_room_no" />
+
+            <com.mili.smarthome.tkj.set.widget.inputview.CustomInputView
+                android:id="@+id/it_room_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_room_no">
+
+            </com.mili.smarthome.tkj.set.widget.inputview.CustomInputView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</com.mili.smarthome.tkj.main.widget.SetSuccessView>

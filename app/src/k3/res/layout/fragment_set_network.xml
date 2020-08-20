@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_320"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_40">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/setting_04"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_15" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:src="@drawable/arrow_right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/setting_0402"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp_256"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_3"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@id/setting_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_256"
+            android:layout_height="@dimen/dp_201"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_12">
+
+            <LinearLayout
+                android:id="@+id/vg_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_ip"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_15" />
+
+                <com.mili.smarthome.tkj.widget.FormatInputView
+                    android:id="@+id/tv_local_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:format="ip"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vg_subnet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_mask"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_15" />
+
+                <com.mili.smarthome.tkj.widget.FormatInputView
+                    android:id="@+id/tv_subnet_mask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:format="ip"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vg_gateway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_gateway"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_15" />
+
+                <com.mili.smarthome.tkj.widget.FormatInputView
+                    android:id="@+id/tv_gateway_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:format="ip"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vg_dns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_dns"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_15" />
+
+                <com.mili.smarthome.tkj.widget.FormatInputView
+                    android:id="@+id/tv_dns_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:format="ip"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vg_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_admin"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_15" />
+
+                <com.mili.smarthome.tkj.widget.FormatInputView
+                    android:id="@+id/tv_manager_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:format="ip"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vg_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_center_server"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_15" />
+
+                <com.mili.smarthome.tkj.widget.FormatInputView
+                    android:id="@+id/tv_center_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:format="ip"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vg_media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_media_server"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_15" />
+
+                <com.mili.smarthome.tkj.widget.FormatInputView
+                    android:id="@+id/tv_media_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:format="ip"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vg_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_face_server"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_15" />
+
+                <com.mili.smarthome.tkj.widget.FormatInputView
+                    android:id="@+id/tv_face_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:format="ip"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vg_elevator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_elevator"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_15" />
+
+                <com.mili.smarthome.tkj.widget.FormatInputView
+                    android:id="@+id/tv_elevator_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:format="ip"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_15" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.mili.smarthome.tkj.setting.view.KeyHintView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_12"
+            app:deletable="true"
+            app:turnable="true" />
+    </LinearLayout>
+
+    <com.mili.smarthome.tkj.setting.view.ResultView
+        android:id="@id/setting_result"
+        android:layout_width="@dimen/dp_256"
+        android:layout_height="@dimen/dp_201"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+</LinearLayout>

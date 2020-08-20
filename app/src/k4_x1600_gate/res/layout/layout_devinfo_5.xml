@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/devinfo_page_5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_os_ver"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_soft_ver"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_hard_ver"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_mac"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_sn"
+            style="@style/devinfo_tv_style"/>
+
+        <ImageView
+            android:id="@+id/iv_sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:background="@color/white"
+            android:padding="@dimen/dp_3"/>
+    </LinearLayout>
+</FrameLayout>

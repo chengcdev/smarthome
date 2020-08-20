@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.mili.smarthome.tkj.view.SetOperateView
+        android:id="@+id/ll_all"
+        android:paddingTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_parent"
+            android:layout_width="@dimen/dp_320"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <include layout="@layout/horizontal_line_layout" />
+
+        <LinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_child"
+                android:layout_width="@dimen/dp_320"
+                android:layout_height="@dimen/dp_201"
+                android:layout_gravity="center_horizontal"/>
+
+            <include
+                layout="@layout/layout_key_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"/>
+        </LinearLayout>
+    </com.mili.smarthome.tkj.view.SetOperateView>
+
+    <FrameLayout
+        android:id="@+id/fl_func"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

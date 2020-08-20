@@ -1,0 +1,155 @@
+<resources>
+
+    <string name="app_name">TKJ_K3</string>
+
+    <string name="qr_scan_tip">请对准二维码，耐心等待</string>
+    <string name="qr_scan_tip2">请扫码开门</string>
+
+    <string name="manager_center">管理中心</string>
+    <string name="call_center_confirm">请确认是否呼叫中心？</string>
+    <string name="call_connecting">连接中&#8230;</string>
+    <string name="call_no_reply">无回答</string>
+    <string name="input_no_hint">请输入房号</string>
+
+    <string name="clear_card_confirm">是否删除所有卡号？</string>
+    <string name="clear_pwd_confirm">是否删除所有密码？</string>
+    <string name="clear_face_confirm">是否清空人脸记录？</string>
+    <string name="clear_finger_confirm">是否删除所有指纹？</string>
+    <string name="restore_factory_confirm">是否恢复出厂设置？</string>
+    <string name="memory_format_confirm">是否格式化存储卡？</string>
+
+    <string name="setting_ing">处理中&#8230;</string>
+    <string name="setting_wait">请稍候&#8230;</string>
+    <string name="setting_suc">设置成功！</string>
+    <string name="setting_fail">设置失败！</string>
+    <string name="setting_room_no">房号：</string>
+    <string name="setting_card_no">卡号：</string>
+    <string name="setting_card_sync_hint">请注意！在此进行的卡管理，只针对本地有效，不与中心同步！</string>
+    <string name="setting_pwd">密码：</string>
+    <string name="setting_admin_pwd1">请输入新密码：</string>
+    <string name="setting_admin_pwd2">请再次输入新密码：</string>
+    <string name="setting_input_error">输入错误！</string>
+    <string name="setting_pwd_diff_error">两次密码输入不一致，请重新输入！</string>
+    <string name="setting_rtsp_url">IPC 地址：</string>
+    <string name="setting_bluetooth_devid">设备注册ID：</string>
+    <string name="setting_stair_no">梯口号：</string>
+    <string name="setting_area_no">区口号：</string>
+    <string name="setting_dev_no">设备号：</string>
+    <string name="setting_enabled_cell">启用单元号：</string>
+    <string name="setting_tikou_len">梯口号长度：</string>
+    <string name="setting_room_len">房号长度：</string>
+    <string name="setting_cell_len">单元号长度：</string>
+    <string name="setting_room_start">起始房号：</string>
+    <string name="setting_floor_count">楼层数：</string>
+    <string name="setting_room_count_per_floor">每层户数：</string>
+    <string name="setting_date">日期：</string>
+    <string name="setting_time">时间：</string>
+    <string name="setting_call_volume">通话音量：</string>
+    <string name="setting_devinfo">设备信息</string>
+    <string name="setting_build_no">楼栋号：</string>
+    <string name="setting_cell_no">单元号：</string>
+    <string name="setting_memory_total">总容量：</string>
+    <string name="setting_memory_used">已用容量：</string>
+    <string name="setting_memory_surplus">剩余容量：</string>
+    <string name="setting_memory_non_exists">没有存储卡！</string>
+
+    <string name="face_level_0">普通</string>
+    <string name="face_level_1">正常</string>
+    <string name="face_level_2">高</string>
+
+    <string name="body_detection_0">触发开屏</string>
+    <!--<string name="body_detection_1">人脸识别</string>-->
+    <!--<string name="body_detection_2">扫码开门</string>-->
+    <!--<string name="body_detection_3">蓝牙开门器</string>-->
+
+    <string-array name="setting_theme">
+        <item>黑色</item>
+        <item>蓝色</item>
+    </string-array>
+
+    <string-array name="setting_event_platform">
+        <item>管理中心</item>
+        <item>智慧云平台</item>
+    </string-array>
+
+    <!-- ================================================== -->
+    <!--  setting list                                      -->
+    <!-- ================================================== -->
+
+    <string name="setting_01">卡管理</string>
+    <string name="setting_0101">添加卡</string>
+    <string name="setting_0102">删除卡</string>
+    <string name="setting_0103">清空卡</string>
+
+    <string name="setting_02">密码管理</string>
+    <string name="setting_0201">添加密码</string>
+    <string name="setting_0202">删除密码</string>
+    <string name="setting_0203">清空密码</string>
+    <string name="setting_0204">修改管理密码</string>
+
+    <string name="setting_03">门禁设置</string>
+    <string name="setting_0301">锁属性设置</string>
+    <string name="setting_030101">开锁类型</string>
+    <string name="setting_030102">开锁时间</string>
+    <string name="setting_0302">门状态设置</string>
+    <string name="setting_030201">门状态检测</string>
+    <string name="setting_030202">报警输出</string>
+    <string name="setting_030203">上报中心</string>
+    <string name="setting_0303">人脸识别</string>
+    <string name="setting_030301">清空人脸记录</string>
+    <string name="setting_030302">安全级别</string>
+    <string name="setting_030303">人脸活体检测</string>
+    <string name="setting_030304">IPC 地址</string>
+    <string name="setting_0304">二维码开门</string>
+    <string name="setting_030401">扫码开门</string>
+    <string name="setting_030402">蓝牙开门器</string>
+    <string name="setting_0305">指纹识别</string>
+    <string name="setting_030501">添加指纹</string>
+    <string name="setting_030502">删除指纹</string>
+    <string name="setting_030503">清空指纹</string>
+    <string name="setting_0306">人体感应</string>
+    <string name="setting_0307">APN设置</string>
+
+    <string name="setting_04">系统设置</string>
+    <string name="setting_0401">梯口号设置</string>
+    <string name="setting_0411">区口号设置</string>
+    <string name="setting_0402">网络设置</string>
+    <string name="setting_0403">编码规则设置</string>
+    <string name="setting_0404">住户设置</string>
+    <string name="setting_0405">时间设置</string>
+    <string name="setting_0406">声音设置</string>
+    <string name="setting_040601">通话音量</string>
+    <string name="setting_040602">提示音</string>
+    <string name="setting_040603">按键音</string>
+    <string name="setting_040604">媒体静音</string>
+    <string name="setting_0407">存储卡管理</string>
+    <string name="setting_040701">本机容量</string>
+    <string name="setting_040702">格式化存储卡</string>
+    <string name="setting_040703">媒体信息</string>
+    <string name="setting_040704">外置SD卡容量</string>
+    <string name="setting_0408">恢复出厂</string>
+
+    <string name="setting_05">高级设置</string>
+    <string name="setting_0501">密码进门模式</string>
+    <string name="setting_0502">报警参数</string>
+    <string name="setting_050201">强行开门报警</string>
+    <string name="setting_0503">拍照参数</string>
+    <string name="setting_050301">启用访客拍照</string>
+    <string name="setting_050302">错误密码开门拍照</string>
+    <string name="setting_050303">挟持密码开门拍照</string>
+    <string name="setting_050304">呼叫中心抓拍</string>
+    <string name="setting_050305">人脸开门抓拍</string>
+    <string name="setting_050306">指纹开门抓拍</string>
+    <string name="setting_050307">刷卡开门抓拍</string>
+    <string name="setting_050308">密码开门抓拍</string>
+    <string name="setting_050309">扫码开门抓拍</string>
+    <string name="setting_050310">陌生人脸抓拍</string>
+    <string name="setting_0504">省电模式</string>
+    <string name="setting_0505">屏保设置</string>
+    <string name="setting_0506">灵敏度设置</string>
+    <string name="setting_0507">界面风格</string>
+    <string name="setting_0508">事件上报平台</string>
+
+    <string name="setting_06">设备信息</string>
+
+</resources>

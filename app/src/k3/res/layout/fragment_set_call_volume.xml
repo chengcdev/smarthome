@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_320"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_40">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/setting_04"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_15"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:src="@drawable/arrow_right"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/setting_0406"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_15"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:src="@drawable/arrow_right"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/setting_040601"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_15"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp_256"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_3"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:id="@id/setting_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_256"
+            android:layout_height="@dimen/dp_201"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_84"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_call_volume"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_15"/>
+
+                <com.mili.smarthome.tkj.widget.NumInputView
+                    android:id="@+id/tv_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:maxLength="1"
+                    app:textColor="@color/txt_white"
+                    app:textSize="@dimen/sp_15"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.mili.smarthome.tkj.setting.view.KeyHintView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_12"
+            app:deletable="true"/>
+    </LinearLayout>
+
+    <com.mili.smarthome.tkj.setting.view.ResultView
+        android:id="@id/setting_result"
+        android:layout_width="@dimen/dp_256"
+        android:layout_height="@dimen/dp_201"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+</LinearLayout>

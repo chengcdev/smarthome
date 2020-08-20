@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/window_bg"
+    android:paddingTop="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_60">
+
+
+    <RadioGroup
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:id="@+id/rg_pwd_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rb_resident"
+            style="@style/pwdtype_btn_style"
+            android:drawableLeft="@drawable/ctrl_resident_icon"
+            android:text="@string/pwd_resident" />
+
+        <RadioButton
+            android:id="@+id/rb_express"
+            style="@style/pwdtype_btn_style"
+            android:drawableLeft="@drawable/ctrl_experss_icon"
+            android:text="@string/pwd_express" />
+
+        <RadioButton
+            android:id="@+id/rb_take_out"
+            style="@style/pwdtype_btn_style"
+            android:drawableLeft="@drawable/ctrl_take_out_icon"
+            android:text="@string/pwd_take_out" />
+
+        <RadioButton
+            android:id="@+id/rb_other"
+            style="@style/pwdtype_btn_style"
+            android:drawableLeft="@drawable/ctrl_other_icon"
+            android:text="@string/pwd_other" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/rg_pwd_type"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.mili.smarthome.tkj.view.NumberView
+                android:id="@+id/num_view"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_80"
+                android:layout_centerHorizontal="true"
+                >
+
+            </com.mili.smarthome.tkj.view.NumberView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/num_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/tv_confirm"
+                    style="@style/keyboard_textview_style"
+                    android:text="@string/contrl_confrim" />
+
+                <ImageView
+                    android:id="@+id/img_confirm"
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_15"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_confirm"
+                    android:src="@drawable/key_lock" />
+
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/img_confirm"
+                    android:id="@+id/tv_delete"
+                    style="@style/keyboard_textview_style"
+                    android:text="@string/contrl_delete" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_15"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_delete"
+                    android:src="@drawable/ctrl_cancel_icon" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <include layout="@layout/set_keyboard_layout" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/devinfo_page_2"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_pwd_mode"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_forced_open"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_power_saving"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_screen_saver"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_pwd_dynamic"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_card_no_len"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_tk_no_len"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_room_no_len"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_cell_no_len"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_no_rule"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_call_volume"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_prompt_tone"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_key_tone"
+            style="@style/devinfo_tv_style"/>
+    </LinearLayout>
+</FrameLayout>

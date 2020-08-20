@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="txt_white">#FFFFFF</color>
+    <color name="txt_black">#000000</color>
+    <color name="txt_red">#FFFF0000</color>
+    <color name="txt_green">#39B54A</color>
+    <color name="txt_blue">#3978E8</color>
+    <color name="txt_yellow">#FFFF00</color>
+
+    <color name="btn_black">#232E37</color>
+    <color name="btn_blue">#1149FA</color>
+
+    <!--zxing-->
+    <color name="contents_text">#000000</color>
+    <color name="encode_view">#ffffff</color>
+    <color name="possible_result_points">#ffbd21</color>
+    <color name="result_minor_text">#c0c0c0</color>
+    <color name="result_points">#99cc00</color>
+    <color name="result_text">#ffffff</color>
+    <color name="result_view">#000000</color>
+    <color name="status_text">#ffffff</color>
+    <color name="viewfinder_mask">#50000000</color>
+    <color name="react">#50ffffff</color>
+    <color name="scanLineColor">#ffffff</color>
+    <color name="defaultColor">#ffffff</color>
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="@dimen/dp_256"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_40"
+        android:textColor="@color/txt_white"
+        android:textSize="@dimen/sp_15"/>
+
+    <View
+        android:layout_width="@dimen/dp_256"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_3"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_256"
+        android:layout_height="@dimen/dp_161"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40">
+
+            <TextView
+                android:id="@+id/tv_devtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/setting_stair_no"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_15"/>
+
+            <com.mili.smarthome.tkj.widget.NumInputView
+                android:id="@+id/tv_tk_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_200"
+                app:maxLength="2"
+                app:paddingZero="true"
+                app:textColor="@color/txt_white"
+                app:textSize="@dimen/sp_15" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_devno"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40">
+
+            <TextView
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/setting_dev_no"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_15"/>
+
+            <com.mili.smarthome.tkj.widget.NumInputView
+                android:id="@+id/tv_dev_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_200"
+                app:maxLength="4"
+                app:paddingZero="true"
+                app:textColor="@color/txt_white"
+                app:textSize="@dimen/sp_15" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40">
+
+            <TextView
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/setting_enabled_cell"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_15"/>
+
+            <com.mili.smarthome.tkj.widget.MyTextView
+                android:id="@+id/tv_enabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_200"
+                app:textColor="@color/txt_white"
+                app:textSize="@dimen/sp_15"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp_256"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/white"/>
+
+    <FrameLayout
+        android:id="@id/setting_content"
+        android:layout_width="@dimen/dp_256"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_4"
+        android:padding="@dimen/dp_8">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_36"
+            android:layout_gravity="left"
+            android:background="@drawable/main_btn_bg"
+            android:text="@string/pub_cancel"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_15"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_36"
+            android:layout_gravity="right"
+            android:background="@drawable/main_btn_bg"
+            android:text="@string/pub_confirm"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_15"/>
+    </FrameLayout>
+
+    <com.mili.smarthome.tkj.setting.view.KeyHintView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:deletable="true"
+        app:turnable="false"/>
+</LinearLayout>

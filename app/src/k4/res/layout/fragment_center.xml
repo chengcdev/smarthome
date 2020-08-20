@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_288"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/content1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_120"
+            android:layout_marginTop="@dimen/dp_35"
+            android:layout_gravity="start"
+            android:background="@drawable/call_center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_icon"
+            android:layout_marginTop="@dimen/dp_70"
+            android:layout_marginStart="@dimen/dp_40"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_12"
+                android:text="@string/center_hint"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/txt_green"
+                android:textSize="@dimen/sp_12"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_below="@+id/iv_icon"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_call"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_20"
+                android:background="@drawable/button_bg"
+                android:drawableLeft="@drawable/call_calling"
+                android:text="@string/center_call"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/txt_white"/>
+
+            <Button
+                android:id="@+id/bt_handup"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginStart="@dimen/dp_30"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_20"
+                android:background="@drawable/button_bg"
+                android:drawableLeft="@drawable/call_hangup"
+                android:text="@string/center_cancel"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/txt_white"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/content2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="@string/mian_title"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_20"/>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_20"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_monitorHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_100"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/txt_green"
+            android:textSize="@dimen/sp_20"/>
+
+        <TextView
+            android:id="@+id/tv_doorHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_100"
+            android:gravity="center_horizontal"
+            android:text="@string/call_open_door"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_32"/>
+
+        <TextView
+            android:id="@+id/tv_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_110"
+            android:gravity="center_horizontal"
+            android:text="@string/center_manager"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_36"/>
+
+        <TextView
+            android:id="@+id/tv_callstate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_195"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/sp_18"/>
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_220"
+            android:layout_gravity="center_horizontal"
+            android:drawableRight="@drawable/key_cancel"
+            android:text="@string/contrl_return"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_18"/>
+
+    </FrameLayout>
+    
+</FrameLayout>

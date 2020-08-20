@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mili.smarthome.tkj.set.widget.MainLayoutView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_layout_height"
+        android:background="@drawable/title_back"
+        >
+
+        <com.mili.smarthome.tkj.main.widget.KeyBoardRecyclerView
+            android:id="@+id/rv_house_hold"
+            android:layout_width="match_parent"
+            android:layout_height="188px">
+
+        </com.mili.smarthome.tkj.main.widget.KeyBoardRecyclerView>
+
+        <TextView
+            android:layout_below="@+id/rv_house_hold"
+            android:layout_marginLeft="20px"
+            android:id="@+id/tv_content"
+            android:textColor="@color/green_color"
+            android:gravity="center_vertical"
+            android:textSize="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/img_title"
+            android:src="@drawable/top_edit_1_cn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/rl_top"
+        android:id="@+id/rl_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keybordview_layout_height"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/lin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+                android:id="@+id/key_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:imageSouces="@drawable/key_last">
+
+            </com.mili.smarthome.tkj.main.widget.KeyBoardItemView>
+
+            <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+                android:id="@+id/key_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:imageSouces="@drawable/key_next">
+
+            </com.mili.smarthome.tkj.main.widget.KeyBoardItemView>
+
+            <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+                android:id="@+id/key_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:showBtnCall="true"
+                app:imageSouces="@drawable/list_btn"
+                >
+            </com.mili.smarthome.tkj.main.widget.KeyBoardItemView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</com.mili.smarthome.tkj.set.widget.MainLayoutView>

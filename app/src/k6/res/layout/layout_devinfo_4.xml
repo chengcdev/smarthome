@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_local_ip"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_sub"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_gateway"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_dns"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_admin"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_center"
+            style="@style/devinfo_tv_style"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_240"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_media"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_face"
+            style="@style/devinfo_tv_style"/>
+
+        <TextView
+            android:id="@+id/tv_elevator"
+            style="@style/devinfo_tv_style"/>
+    </LinearLayout>
+
+</FrameLayout>

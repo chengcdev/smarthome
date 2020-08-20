@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mili.smarthome.tkj.set.widget.MainLayoutView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:background="@drawable/title_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_layout_height">
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keybordview_layout_height"
+        android:layout_below="@+id/fl_container"
+        >
+
+        <com.mili.smarthome.tkj.main.widget.DirecPressRecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </com.mili.smarthome.tkj.main.widget.DirecPressRecyclerView>
+
+
+        <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+            android:visibility="gone"
+            android:id="@+id/key_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backGround="@drawable/keyboard_btn_long_bg"
+            app:imageSouces="@drawable/key_center">
+
+        </com.mili.smarthome.tkj.main.widget.KeyBoardItemView>
+
+
+    </RelativeLayout>
+
+</com.mili.smarthome.tkj.set.widget.MainLayoutView>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/devinfo_page_4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_local_ip"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/setting_ip" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_subnet_mask"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/setting_mask" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_gateway_ip"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/setting_gateway" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_dns_ip"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/setting_dns" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_manager_ip"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/setting_admin" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_center_ip"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/setting_center_server" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_200"
+        android:orientation="vertical">
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_media_ip"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/setting_media_server" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_face_ip"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/setting_face_server" />
+
+        <com.mili.smarthome.tkj.widget.LabelTextView
+            android:id="@+id/tv_elevator_ip"
+            style="@style/devinfo_lbltv_style"
+            app:label="@string/setting_elevator" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginRight="@dimen/dp_30"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/turn_hint"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_15" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:src="@drawable/key_up" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_2"
+            android:src="@drawable/key_down" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/window_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/dp_60"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/dp_100"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_100"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:id="@+id/rl_capture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <org.linphone.mediastream.video.display.GL2JNIView
+                android:id="@+id/recv_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextureView
+                android:id="@+id/preview_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.mili.widget.zxing.ViewfinderView
+                android:id="@+id/viewfinder_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin_left"
+            android:paddingLeft="@dimen/dp_15"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/qr_text_1"
+                android:id="@+id/tv_qr1"
+                style="@style/qr_textview_style" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_50"
+                android:gravity="left"
+                android:text="@string/qr_text_2"
+                android:id="@+id/tv_qr2"
+                style="@style/qr_textview_style" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/common_back_layout" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

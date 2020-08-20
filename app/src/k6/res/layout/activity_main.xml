@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <com.mili.smarthome.tkj.view.CustomButtonView
+            android:id="@+id/btn_pwd_open"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_weight="1">
+
+        </com.mili.smarthome.tkj.view.CustomButtonView>
+
+        <com.mili.smarthome.tkj.view.CustomButtonView
+            android:id="@+id/btn_qr_open"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_weight="1">
+
+        </com.mili.smarthome.tkj.view.CustomButtonView>
+
+        <com.mili.smarthome.tkj.view.CustomButtonView
+            android:id="@+id/btn_call_center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_weight="1">
+
+        </com.mili.smarthome.tkj.view.CustomButtonView>
+
+        <com.mili.smarthome.tkj.view.CustomButtonView
+            android:id="@+id/btn_call_house"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </com.mili.smarthome.tkj.view.CustomButtonView>
+
+        <com.mili.smarthome.tkj.view.CustomButtonView
+            android:id="@+id/btn_face_open"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </com.mili.smarthome.tkj.view.CustomButtonView>
+
+    </LinearLayout>
+
+</RelativeLayout>

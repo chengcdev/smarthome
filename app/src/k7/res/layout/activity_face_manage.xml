@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.mili.smarthome.tkj.set.widget.MainLayoutView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_layout_height"
+        android:background="@drawable/title_back">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/SettingTitleStyle"
+            android:text="@string/face_manage_title"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keybordview_layout_height"
+        android:layout_below="@+id/headerLayout">
+
+        <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+            android:id="@+id/key_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:callView="true"/>
+
+        <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+            android:id="@+id/key_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/key_add"
+            app:callView="true"/>
+
+        <com.mili.smarthome.tkj.main.widget.KeyBoardItemView
+            android:id="@+id/key_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:imageSouces="@drawable/key_cancle"/>
+    </RelativeLayout>
+</com.mili.smarthome.tkj.set.widget.MainLayoutView>

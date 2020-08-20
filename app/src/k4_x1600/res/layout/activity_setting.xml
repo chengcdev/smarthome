@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/window_bg"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_settype1"
+        android:layout_width="@dimen/dp_288"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_35"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_card"
+            style="@style/set_btn_style"
+            android:text="@string/setting_01" />
+
+        <RadioButton
+            android:id="@+id/rb_password"
+            style="@style/set_btn_style"
+            android:text="@string/setting_02" />
+
+        <RadioButton
+            android:id="@+id/rb_door"
+            style="@style/set_btn_style"
+            android:text="@string/setting_03" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_settype2"
+        android:layout_width="@dimen/dp_288"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_system"
+            style="@style/set_btn_style"
+            android:text="@string/setting_04" />
+
+        <RadioButton
+            android:id="@+id/rb_advanced"
+            style="@style/set_btn_style"
+            android:text="@string/setting_05" />
+
+        <RadioButton
+            android:id="@+id/rb_info"
+            style="@style/set_btn_style"
+            android:text="@string/setting_06" />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="@dimen/dp_288"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+
+</LinearLayout>

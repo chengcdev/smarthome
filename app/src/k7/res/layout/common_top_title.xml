@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mili.smarthome.tkj.main.widget.SetSuccessView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/success_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/title_back">
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_call">
+
+        <ImageView
+            android:id="@+id/img_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:id="@+id/rl_net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10px">
+
+            <com.mili.smarthome.tkj.widget.WirelessNetworkView
+                android:id="@+id/iv_net"
+                android:visibility="gone"
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:src="@drawable/net_error"
+                app:imageResType="k7" />
+
+        </RelativeLayout>
+
+
+        <com.mili.smarthome.tkj.set.widget.NumView
+            android:id="@+id/numview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+        </com.mili.smarthome.tkj.set.widget.NumView>
+
+    </RelativeLayout>
+
+
+</com.mili.smarthome.tkj.main.widget.SetSuccessView>

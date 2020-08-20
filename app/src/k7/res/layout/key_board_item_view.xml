@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/keyboard_item_height"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/lin_root"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_bianma"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            style="@style/KeyBoardIcon"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_name"
+            style="@style/KeyBoardText"
+            android:layout_marginTop="@dimen/qb_px_8" />
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_direct"
+        android:visibility="gone"
+        android:background="@drawable/keyboard_btn_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_toLeftOf="@+id/img_item"
+            android:textColor="@color/white"
+            android:textSize="45px" />
+
+        <ImageView
+            android:id="@+id/img_item"
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/keyboard_btn_call" />
+    </RelativeLayout>
+
+
+</LinearLayout>

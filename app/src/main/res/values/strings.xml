@@ -1,0 +1,334 @@
+<resources>
+
+    <!-- ================================================== -->
+    <!--  公共资源定义                                      -->
+    <!-- ================================================== -->
+
+    <string name="pub_confirm">确认</string>
+    <string name="pub_cancel">取消</string>
+    <string name="pub_yes">是</string>
+    <string name="pub_no">否</string>
+    <string name="pub_enable">启用</string>
+    <string name="pub_disable">禁用</string>
+    <string name="pub_call">呼叫</string>
+    <string name="pub_add">添加</string>
+    <string name="pub_del">删除</string>
+    <string name="pub_edit">编辑</string>
+
+    <string name="confirm_hint">确认请按</string>
+    <string name="delete_hint">删除请按</string>
+    <string name="back_hint">返回请按</string>
+    <string name="backspace_hint">返回/删除请按</string>
+    <string name="turn_hint">翻页请按</string>
+    <string name="back">返回</string>
+
+    <string name="mian_title">智慧社区</string>
+    <string name="unlock_by_password">密码开门</string>
+    <string name="unlock_by_qrcode">扫码开门</string>
+    <string name="unlock_by_face">人脸开门</string>
+    <string name="call_center">呼叫中心</string>
+    <string name="call_resident">呼叫住户</string>
+
+
+    <!-- ================================================== -->
+    <!--  恢复出厂                                          -->
+    <!-- ================================================== -->
+
+    <string name="reset_language">请选择语言</string>
+    <string name="reset_cardnum">请选择卡号位数</string>
+    <string name="reset_devtype">请选择设备属性</string>
+    <string name="reset_stairno">梯口号设置</string>
+    <string name="reset_areano">区口号设置</string>
+    <string name="reset_network">网络设置</string>
+
+    <string-array name="language_list">
+        <item>中文简体</item>
+    </string-array>
+
+    <string-array name="cardno_len">
+        <item>6位</item>
+        <item>8位</item>
+    </string-array>
+
+    <string-array name="devtype_list">
+        <item>梯口</item>
+        <item>区口</item>
+    </string-array>
+
+
+    <!-- ================================================== -->
+    <!--  呼叫对讲                                          -->
+    <!-- ================================================== -->
+
+    <string name="call_connect_loading">连接中&#8230;</string>
+    <string name="call_calling">呼叫中</string>
+    <string name="call_recordhit">留言提示中&#8230;</string>
+    <string name="call_connect_fail">无回答</string>
+    <string name="call_open_door">门开了,请进入!</string>
+    <string name="call_no_close_door">请关好门</string>
+    <string name="call_talk_end">通话结束</string>
+    <string name="call_end">呼叫结束</string>
+    <string name="call_please">请通话</string>
+    <string name="call_please_ly">请留言&#8230;</string>
+    <string name="call_busy">用户忙&#8230;</string>
+    <string name="call_no_num">无此房号</string>
+    <string name="call_no_respose">无人接听</string>
+    <string name="call_invalid_card">卡无效</string>
+
+
+    <!-- ================================================== -->
+    <!--  卡管理                                            -->
+    <!-- ================================================== -->
+
+
+    <!-- ================================================== -->
+    <!--  密码管理                                          -->
+    <!-- ================================================== -->
+
+    <string name="pwd_resident">住户</string>
+    <string name="pwd_express">快递</string>
+    <string name="pwd_take_out">外卖</string>
+    <string name="pwd_other">其他</string>
+    <string name="input_pwd_hint">请输入密码</string>
+    <string name="input_admin_pwd_hint">请输入管理密码</string>
+
+
+    <!-- ================================================== -->
+    <!--  人脸识别                                          -->
+    <!-- ================================================== -->
+
+    <string name="face_scan_hint0">请保持 30-50cm 的最佳识别距离</string>
+    <string name="face_scan_hint1">正在进行扫描验证</string>
+    <string name="face_scan_hint2">确保面部清晰可见</string>
+    <string name="face_scan_hint3">请正对着设备，轻微抬头或左右摇头</string>
+    <string name="face_scan_hint4">请正对着设备</string>
+    <string name="face_recognition_fail">暂时无法识别人脸请使用刷卡或密码进门</string>
+    <string name="face_recognition_suc1">人脸识别成功</string>
+    <string name="face_recognition_suc2">门开了,请进入！</string>
+    <string name="face_enrollment_hint1">人脸识别准备中</string>
+    <string name="face_enrollment_hint2">人脸注册</string>
+    <string name="face_enrollment_hint3">人脸识别卡无效</string>
+    <string name="face_manage_del_confirm">是否要删除人脸记录？</string>
+    <string name="face_manage_del_ing">处理中&#8230;</string>
+    <string name="face_manage_del_suc">设置成功</string>
+    <string name="face_manage_clear_confirm">是否清空人脸记录？</string>
+    <string name="face_manage_add_vistor">访客添加</string>
+    <string name="face_manage_add_resident">本地添加</string>
+    <string name="face_manage_hint1">请刷卡</string>
+    <string name="face_manage_hint2">请选择</string>
+    <string name="face_manage_hint8">人脸识别温馨提示</string>
+    <string name="face_manage_hint9">为了达到最佳的识别效果，请您不要佩戴墨镜，注意不要让帽沿、眼镜、头发遮住眼睛。\n\n在使用时，保持与注册的形象一致。\n\n系统在不同光照下，需要一个环境适应的过程，比如白天、黑夜、阴雨天气等。\n\n当系统无法正确识别您的面部时，请您再次进行注册。</string>
+    <string name="face_manage_hint11">请输入管理密码</string>
+
+    <string name="input_building_no">楼栋号：</string>
+    <string name="input_cell_no">单元号：</string>
+    <string name="input_room_no">房号：</string>
+
+    <!-- ================================================== -->
+    <!--  二维码                                            -->
+    <!-- ================================================== -->
+
+    <string name="qr_text_1">正在进行"\n"扫描验证</string>
+    <string name="qr_text_2">请对准二"\n"维码,耐心"\n"等待</string>
+
+
+    <!-- ================================================== -->
+    <!--  指纹                                              -->
+    <!-- ================================================== -->
+
+    <string name="finger_set_hint">请注意！在此进行的指纹管理，只针对本地有效，不与中心同步！</string>
+    <string name="finger_collect_format">开始第[%1$d]次采集指纹</string>
+    <string name="finger_collect_begin">开始采集指纹特征</string>
+    <string name="finger_collect_0">手指按压正常</string>
+    <string name="finger_collect_1">请稍用力按手指</string>
+    <!--<string name="finger_collect_10"></string>-->
+    <!--<string name="finger_collect_11"></string>-->
+    <string name="finger_collect_20">请下移手指</string>
+    <string name="finger_collect_21">请上移手指</string>
+    <string name="finger_collect_22">请右移手指</string>
+    <string name="finger_collect_23">请左移手指</string>
+    <string name="finger_collect_24">请向右下方平移手指</string>
+    <string name="finger_collect_25">请向右上方平移手指</string>
+    <string name="finger_collect_26">请向左下方平移手指</string>
+    <string name="finger_collect_27">请向左上方平移手指</string>
+    <string name="finger_collect_30">请平放手指，与传感器充分接触</string>
+    <string name="finger_collect_255">未知</string>
+    <string name="finger_press">请按手指</string>
+    <string name="finger_raise">请抬起手指</string>
+    <string name="finger_keep_press">请保持手指按下！</string>
+    <string name="finger_verifying">正在对比指纹，请等候！</string>
+    <string name="finger_press_again">请重按手指</string>
+    <string name="finger_invalid">无效指纹</string>
+    <string name="finger_full">指纹库满</string>
+    <string name="finger_clear_confirm">是否删除所有指纹？</string>
+
+
+    <!-- ================================================== -->
+    <!--  工程设置                                          -->
+    <!-- ================================================== -->
+
+    <string name="no_device_permission">没有设备管理权限</string>
+    <string name="set_input_door_pwd">请输入密码</string>
+    <string name="set_input_admin_pwd">请输入管理密码</string>
+    <string name="set_input_room_no">请输入房号</string>
+    <string name="set_input_room_no_error">房号不合法!</string>
+    <string name="set_input_pwd_error">密码错误</string>
+    <string name="set_input_pwd_unuse">密码开门功能未启用</string>
+    <string name="set_input_error">输入错误！</string>
+    <string name="set_pwd_error">两次密码输入不一致，请重新输入！</string>
+    <string name="contrl_confrim">确认请按</string>
+    <string name="contrl_delete">删除请按</string>
+    <string name="contrl_return">返回请按</string>
+
+    <string name="set_success">设置成功！</string>
+    <string name="set_fail">设置失败！</string>
+    <string name="set_processing">处理中......</string>
+    <string name="set_please_wating">请稍后......</string>
+
+    <string name="setting_number">编号：</string>
+    <string name="setting_open_often">常开</string>
+    <string name="setting_close_often">常闭</string>
+    <string name="setting_enable">启用</string>
+    <string name="setting_disable">不启用</string>
+    <string name="setting_ban">禁用</string>
+    <string name="setting_close">关闭</string>
+    <string name="setting_pwd_door1">简易模式</string>
+    <string name="setting_pwd_door2">高级模式</string>
+    <string name="setting_ip">本机IP：</string>
+    <string name="setting_mask">子网掩码：</string>
+    <string name="setting_gateway">网关：</string>
+    <string name="setting_dns">DNS服务器：</string>
+    <string name="setting_admin">管理员机：</string>
+    <string name="setting_center_server">中心服务器：</string>
+    <string name="setting_media_server">流媒体服务器：</string>
+    <string name="setting_elevator">电梯控制器：</string>
+    <string name="setting_face_server">人脸识别服务器：</string>
+    <string name="setting_version">版本：</string>
+    <string name="setting_no_memory_card">没有存储卡！</string>
+    <string name="setting_capacity">本地容量</string>
+    <string name="setting_external_capacity">SD卡容量</string>
+    <string name="setting_total_capacity">总容量：\t\t\t</string>
+    <string name="setting_used_capacity">已用容量：\t</string>
+    <string name="setting_residual_capacity">剩余容量：\t</string>
+    <string name="setting_media_info">媒体信息</string>
+    <string name="manage_center">管理中心</string>
+
+    <!-- ================================================== -->
+    <!--  设备信息                                          -->
+    <!-- ================================================== -->
+
+    <string name="device_info_device_no">设备号：</string>
+    <string name="device_info">设备信息</string>
+    <string name="device_info_nature">设备属性：</string>
+    <string name="device_info_tkh">梯口号：</string>
+    <string name="device_info_qkh">区口号：</string>
+    <string name="device_info_room_start">起始房号：</string>
+    <string name="device_info_floor_num">楼层数：</string>
+    <string name="device_info_floor_num_user">每层户数：</string>
+    <string name="device_info_lock_type">开锁类型：</string>
+    <string name="device_info_lock_time">开锁时间：</string>
+    <string name="device_info_lock_door_check">门状态检测：</string>
+    <string name="device_info_alarm_out">报警输出：</string>
+    <string name="device_info_update_center">上报中心：</string>
+    <string name="device_info_call_type">呼叫方式：</string>
+    <string name="device_info_unit_num">单元号：</string>
+    <string name="device_info_card_num">剩余卡数：</string>
+    <string name="device_info_face_num">剩余用户数：</string>
+    <string name="device_info_fingerprint_num">剩余指纹数：</string>
+
+    <string name="device_info_1">密码开门模式：</string>
+    <string name="device_info_2">强行开门报警：</string>
+    <string name="device_info_3">访客呼叫拍照：</string>
+    <string name="device_info_4">错误密码开门拍照：</string>
+    <string name="device_info_5">挟持密码开门拍照：</string>
+    <string name="device_info_6">省电模式：</string>
+    <string name="device_info_7">屏保：</string>
+    <string name="device_info_8">按键灵敏度：</string>
+    <string name="device_info_9">卡号长度：</string>
+    <string name="device_info_10">梯口号长度：</string>
+    <string name="device_info_11">房号长度：</string>
+    <string name="device_info_12">单元号长度：</string>
+    <string name="device_info_13">分段描述：</string>
+    <string name="device_info_14">通话音量：</string>
+    <string name="device_info_15">提示音：</string>
+    <string name="device_info_16">按键音：</string>
+    <string name="device_info_17">动态密码：</string>
+    <string name="device_info_18">呼叫中心拍照：</string>
+    <string name="device_info_19">人脸开门拍照：</string>
+    <string name="device_info_20">指纹开门拍照：</string>
+    <string name="device_info_21">刷卡开门拍照：</string>
+    <string name="device_info_22">密码开门拍照：</string>
+    <string name="device_info_23">扫码开门拍照：</string>
+    <string name="device_info_24">陌生人脸拍照：</string>
+    <string name="device_info_version">版本：</string>
+    <string name="device_info_position">位</string>
+    <string name="device_info_calltype_bm">编码式</string>
+    <string name="device_info_calltype_za">直按式</string>
+
+    <string name="device_info_upgrade">检查升级</string>
+    <string name="device_info_auth">授权</string>
+    <string name="device_info_os_ver">系统版本：</string>
+    <string name="device_info_face_ver">FACE++版本：</string>
+    <string name="device_info_soft_ver">版本：</string>
+    <string name="device_info_hard_ver">ChipVer：</string>
+    <string name="device_info_build_ver">BuildVer：</string>
+    <string name="device_info_mac">MAC：</string>
+    <string name="device_info_sn">SN：</string>
+
+    <string name="key_sensitivity">按键灵敏度：</string>
+    <string name="key_sensitivity_0">高</string>
+    <string name="key_sensitivity_1">中</string>
+    <string name="key_sensitivity_2">低</string>
+
+
+
+    <!-- ================================================== -->
+    <!--  comm text define                                  -->
+    <!-- ================================================== -->
+
+    <string name="comm_text_0">空提示</string>
+    <string name="comm_text_1">门开了，请进入</string>
+    <string name="comm_text_2">无效二维码！</string>
+    <string name="comm_text_3">过期二维码！</string>
+    <string name="comm_text_4">无效指纹</string>
+    <string name="comm_text_5">请重按指纹</string>
+    <string name="comm_text_6">正在比对指纹，请等候！</string>
+    <string name="comm_text_7">请保持手指按下！</string>
+    <string name="comm_text_8">请重按指纹</string>
+
+    <string name="comm_text_f1">密码错误</string>
+    <string name="comm_text_f2">卡无效</string>
+    <string name="comm_text_f3">密码功能未启用</string>
+    <string name="comm_text_f4">请稍后</string>
+
+    <string name="comm_text_a1">您已欠物业费，请及时缴纳!</string>
+    <string name="comm_text_a2">您已欠水费，请及时缴纳!</string>
+    <string name="comm_text_a3">您已欠电费，请及时缴纳!</string>
+    <string name="comm_text_a4">您有邮件，请及时认领!</string>
+    <string name="comm_text_a5">看到信息请联系物业!</string>
+
+    <string name="comm_text_d0">请关好门</string>
+    <string name="comm_text_d1">请关好门</string>
+    <string name="comm_text_d2">请关好门</string>
+    <string name="comm_text_e0">刷卡正确!</string>
+    <!--<string name="comm_text_e1"></string>-->
+    <!--<string name="comm_text_e2"></string>-->
+
+    <string name="intercall_dev_door">门前机</string>
+    <string name="intercall_dev_stair">梯口机</string>
+    <string name="intercall_dev_area">区口机</string>
+    <string name="intercall_dev_room">室内机</string>
+    <string name="intercall_dev_fenji">分机</string>
+    <string name="intercall_dev_center">管理员机</string>
+    <string name="intercall_dev_roommain">主机</string>
+
+    <string name="intercalldest_1">栋</string>
+    <string name="intercalldest_2">单元</string>
+    <string name="intercalldest_3">房</string>
+
+    <string name="cloud_state_ok">注册成功</string>
+    <string name="cloud_state_fail">注册失败</string>
+    <string name="mlink_state_ok">平台注册成功</string>
+    <string name="mlink_state_fail">平台注册失败</string>
+
+</resources>

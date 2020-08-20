@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <stroke android:color="@color/white" android:width="0.5dp"/>
+            <solid android:color="?attr/btn_bg_pressed"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <stroke android:color="@color/white" android:width="0.5dp"/>
+            <solid android:color="?attr/btn_bg"/>
+        </shape>
+    </item>
+</selector>

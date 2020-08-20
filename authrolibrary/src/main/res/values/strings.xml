@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AuthroLibrary</string>
+    <string name="auth_loading">授权中，请稍后......</string>
+</resources>

@@ -1,0 +1,84 @@
+<resources>
+
+    <style name="main_btn_textview_style">
+        <item name="android:textColor">@color/txt_black</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="keyboard_textview_style">
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="qr_textview_style">
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="pwdtype_btn_style">
+        <item name="android:layout_width">@dimen/dp_0</item>
+        <item name="android:layout_height">@dimen/dp_48</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">@dimen/dp_1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dp_35</item>
+        <item name="android:drawablePadding">@dimen/dp_1</item>
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/pwdtype_btn_bg</item>
+    </style>
+
+    <style name="devinfo_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="call_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/main_btn_bg</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/dp_16</item>
+        <item name="android:paddingTop">@dimen/dp_8</item>
+        <item name="android:paddingRight">@dimen/dp_16</item>
+        <item name="android:paddingBottom">@dimen/dp_8</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="set_input_tv_style">
+        <item name="android:layout_width">@dimen/dp_120</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="set_main_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="set_img_arrow_style">
+        <item name="android:layout_width">@dimen/dp_15</item>
+        <item name="android:layout_height">@dimen/dp_10</item>
+        <item name="android:src">@drawable/set_head_left_icon</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+</resources>

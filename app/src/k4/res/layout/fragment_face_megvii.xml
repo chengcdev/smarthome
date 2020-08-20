@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_hint0"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="@dimen/dp_35"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/face_scan_hint0"-->
+            <!--android:textColor="@color/txt_blue"-->
+            <!--android:textSize="@dimen/sp_15"/>-->
+
+        <TextView
+            android:id="@+id/tv_hint1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/face_scan_hint4"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_13"/>
+
+        <FrameLayout
+            android:id="@+id/fl_surface"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_weight="1">
+
+            <org.linphone.mediastream.video.display.GL2JNIView
+                android:id="@+id/sv_receive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextureView
+                android:id="@+id/tv_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <com.mili.smarthome.tkj.face.FaceDetectView
+                android:id="@+id/detectView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/iv_zomm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/face_zoom"/>
+
+            <ImageView
+                android:id="@+id/iv_toggle"
+                android:layout_width="@dimen/dp_36"
+                android:layout_height="@dimen/dp_36"
+                android:layout_gravity="left|bottom"
+                android:padding="@dimen/dp_4"
+                android:src="@drawable/face_toggle" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/fl_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_hint2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:text="@string/face_scan_hint1"
+                    android:textColor="@color/txt_white"
+                    android:textSize="@dimen/sp_13"/>
+
+                <TextView
+                    android:id="@+id/tv_hint3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:textColor="@color/txt_green"
+                    android:textSize="@dimen/sp_13"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_oper_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_hint4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/txt_white"
+                        android:textSize="@dimen/sp_13"/>
+
+                    <TextView
+                        android:id="@+id/tv_hint5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_gravity="center"
+                        android:textColor="@color/txt_white"
+                        android:textSize="@dimen/sp_13"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/radiogrop"
+                android:layout_width="@dimen/dp_288"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="horizontal">
+            <!--<LinearLayout-->
+                <!--android:id="@+id/radiogrop"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_margin="@dimen/dp_10"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal">    -->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rb_password"-->
+                    <!--style="@style/face_btn_style"-->
+                    <!--android:text="@string/unlock_by_password"-->
+                    <!--android:drawableTop="@drawable/main_lock"/>-->
+
+                <RadioButton
+                    android:id="@+id/rb_password"
+                    style="@style/main_btn_style"
+                    android:text="@string/unlock_by_password"
+                    android:drawableTop="@drawable/main_lock"/>
+
+                <RadioButton
+                    android:id="@+id/rb_qrcode"
+                    style="@style/main_btn_style"
+                    android:text="@string/unlock_by_qrcode"
+                    android:drawableTop="@drawable/main_scanqr"/>
+
+                <RadioButton
+                    android:id="@+id/rb_center"
+                    style="@style/main_btn_style"
+                    android:text="@string/call_center"
+                    android:drawableTop="@drawable/main_center"/>
+
+                <RadioButton
+                    android:id="@+id/rb_resident"
+                    style="@style/main_btn_style"
+                    android:text="@string/call_resident"
+                    android:drawableTop="@drawable/main_resident"/>
+
+                <RadioButton
+                    android:id="@+id/rb_face"
+                    style="@style/main_btn_style"
+                    android:text="@string/unlock_by_face"
+                    android:drawableTop="@drawable/main_face"
+                    android:checked="true"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fl_add_suc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/face_manage_hint8"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="@string/face_manage_hint9"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/sp_14"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_13"
+                android:text="@string/set_hint1"
+                android:drawableRight="@drawable/set_cancel_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/txt_white"
+                android:textSize="@dimen/sp_13"
+                android:text="@string/set_hint2"
+                android:drawableRight="@drawable/set_sure_icon"
+                android:drawablePadding="@dimen/dp_3"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.mili.smarthome.tkj.main.view.HintView
+        android:id="@+id/hv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</FrameLayout>
