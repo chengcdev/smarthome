@@ -59,7 +59,7 @@ interface IMainService
     int Main_getCardFreeCount();
     void Mian_setCardState(int state);
 
-    // 密码设置
+    // 密码设置 test
     void Main_dealAdvPassWord(String devno, String password);
     void Main_dealPassWord(String keyID, String devno, int result);
     void Main_dealOtherPassWord(String devno, String password, int type);
